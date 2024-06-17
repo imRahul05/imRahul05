@@ -7,15 +7,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" /> </p>
 
-### Spotify Playing 🎧
-
-&nbsp;<div align="center">
-  [![Spotify](https://novatorem.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/omnitenebris)
-</div>
-
-
-
-
 
 - 🔭 I’m currently Studying MCA in VTU.
 
@@ -29,6 +20,13 @@
 
 - ⚡ Fun fact **I am a cinephile**
 
+
+
+### Spotify Playing 🎧
+
+&nbsp;<div align="center">
+  [![Spotify](https://novatorem.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/omnitenebris)
+</div>
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=imrahul05" alt="imrahul05" /></a> </p>
 
 
