@@ -21,12 +21,12 @@
 - ⚡ Fun fact **I am a cinephile**
 
 
-
+<br>
 ### Spotify Playing 🎧
 
 &nbsp;<div align="center">
   [![Spotify](https://novatorem.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/omnitenebris)
-</div>
+</div><br>
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=imrahul05" alt="imrahul05" /></a> </p>
 
 
