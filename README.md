@@ -1,6 +1,4 @@
 <h1 align="center" style="color: pink;">Rahul</h1>
-
-
 <p align="center">
   <!-- Typing SVG by DenverCoder1 - https://github.com/DenverCoder1/readme-typing-svg -->
   <a href="https://github.com/DenverCoder1/readme-typing-svg">
