@@ -20,7 +20,7 @@
 
 - 📫 How to reach me **rahulkumar20000516@gmail.com**
 
-- 📄 MY Resume - [https://imrahul05.vercel.app/resume](https://imrahul05.vercel.app/resume)
+- 📄 MY Resume - [Resume](https://imrahul05.vercel.app/resume)
 
 - ⚡ Fun fact **I am a cinephile**
 
