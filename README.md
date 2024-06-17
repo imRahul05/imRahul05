@@ -5,19 +5,15 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" /> </p>
 
-- 🔭 I’m currently Studying in MCA [Bloogyy](https://bloogyy.vercel.app/)
+- 🔭 I’m currently Studying in MCA in VTU.
 
 - 🌱 I’m currently learning **React.js, Node.js , Express.Js and MongoDB**
-
-- 👨‍💻 All of my projects are available at [https://imrahul05.vercel.app/](https://imrahul05.vercel.app/)
-
-- 📝 I regularly write articles on [https://bloogyy.vercel.app/](https://bloogyy.vercel.app/)
 
 - 💬 Ask me about **C, HTML, CSS, JavaScript**
 
 - 📫 How to reach me **rahulkumar20000516@gmail.com**
 
-- 📄 Know about my experiences [https://imrahul05.vercel.app/resume](https://imrahul05.vercel.app/resume)
+- 📄 MY Resume - [https://imrahul05.vercel.app/resume](https://imrahul05.vercel.app/resume)
 
 - ⚡ Fun fact **I am a cinephile**
 
