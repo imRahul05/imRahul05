@@ -25,13 +25,7 @@
 &nbsp;<div align="center">
   [![Spotify](https://novatorem.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/omnitenebris)
 </div><br>
-<p align="left"> 
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=imrahul05&theme=dark" alt="imrahul05" />
-  </a> 
-</p>
-
-
+![](https://github-profile-trophy.vercel.app/?username=imrahul05&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
