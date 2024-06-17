@@ -5,8 +5,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=imrahul05" alt="imrahul05" /></a> </p>
-
 - 🔭 I’m currently Studying in MCA [Bloogyy](https://bloogyy.vercel.app/)
 
 - 🌱 I’m currently learning **React.js, Node.js , Express.Js and MongoDB**
@@ -22,6 +20,9 @@
 - 📄 Know about my experiences [https://imrahul05.vercel.app/resume](https://imrahul05.vercel.app/resume)
 
 - ⚡ Fun fact **I am a cinephile**
+
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=imrahul05" alt="imrahul05" /></a> </p>
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
