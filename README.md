@@ -6,7 +6,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" /> </p>
 
-- 🔭 I’m currently Studying in MCA in VTU.
+- 🔭 I’m currently Studying MCA in VTU.
 
 - 🌱 I’m currently learning **React.js, Node.js , Express.Js and MongoDB**
 
