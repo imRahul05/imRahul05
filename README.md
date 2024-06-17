@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Rahul Kumar</h1>
 <h3 align="center">A passionate Frontend Web developer from India</h3>
 
-<img align="right" alt="coding.."  width="400"  src="[https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F567523990538356835%2F&psig=AOvVaw2zYW10_xz_t_UBFxXs0BYv&ust=1718689897327000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLi69_z44YYDFQAAAAAdAAAAABAJ](https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif)">
+<img align="right" alt="coding.."  width="400"  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2NjeWVzOXIwd2I2N3ZuN2kwd3AxZXU4eDNydTNtbWoyaDJieHFjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" /> </p>
 
