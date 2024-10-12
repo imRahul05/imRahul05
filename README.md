@@ -25,21 +25,22 @@
 - ⚡ Fun fact **I am a cinephile**
 
 
-<br> [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true)
+<br> 
 
 <table align="center" width="100%" style="border-collapse: collapse;">
   <tr>
     <td align="center" width="50%" style="padding: 10px;">
-    //
+      <!-- Spotify Widget -->
+      <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
+        <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350" style="border-radius: 15px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      </a>
     </td>
     <td align="center" width="50%" style="padding: 10px;">
+      <!-- DevCard Widget -->
       <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" alt="Rahul's Dev Card" width="350" style="border-radius: 15px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     </td>
   </tr>
 </table>
-
-
-  
 
 
 &nbsp;<div align="center">
