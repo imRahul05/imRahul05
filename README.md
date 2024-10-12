@@ -27,6 +27,9 @@
 
 <br>
 
+
+
+<a href="https://app.daily.dev/imrahul05"><img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" width="356" alt="RAHUL's Dev Card"/></a>
 &nbsp;<div align="center">
 [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true)
   
