@@ -27,20 +27,30 @@
 
 <br> 
 
-<table align="center" width="100%" style="border-collapse: collapse;">
-  <tr>
-    <td align="center" width="50%" style="padding: 10px;">
-      <!-- Spotify Widget -->
-      <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
-        <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350" style="border-radius: 15px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-      </a>
-    </td>
-    <td align="center" width="50%" style="padding: 10px;">
-      <!-- DevCard Widget -->
-      <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" alt="Rahul's Dev Card" width="350" style="border-radius: 15px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <div class="flip-card" style="width: 350px; height: 350px; perspective: 1000px;">
+    <div class="flip-card-inner" style="position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d;">
+      <!-- Front (DevCard) -->
+      <div class="flip-card-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden;">
+        <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" width="350" style="border-radius: 15px;">
+      </div>
+
+      <!-- Back (Spotify) -->
+      <div class="flip-card-back" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; transform: rotateY(180deg);">
+        <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
+          <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350" style="border-radius: 15px;">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+</style>
+
 
 
 &nbsp;<div align="center">
