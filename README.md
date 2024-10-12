@@ -27,30 +27,24 @@
 
 <br> 
 
-<div align="center">
-  <div class="flip-card" style="width: 350px; height: 350px; perspective: 1000px;">
-    <div class="flip-card-inner" style="position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d;">
-      <!-- Front (DevCard) -->
-      <div class="flip-card-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden;">
-        <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" width="350" style="border-radius: 15px;">
-      </div>
+<div style="width: 100%; overflow-x: scroll; white-space: nowrap; text-align: center;">
+  <!-- Spotify -->
+  <div style="display: inline-block; padding: 10px;">
+    <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
+      <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350">
+    </a>
+  </div>
 
-      <!-- Back (Spotify) -->
-      <div class="flip-card-back" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; transform: rotateY(180deg);">
-        <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
-          <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350" style="border-radius: 15px;">
-        </a>
-      </div>
-    </div>
+  <!-- DevCard -->
+  <div style="display: inline-block; padding: 10px;">
+    <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" width="350">
+  </div>
+
+  <!-- Additional Widgets (e.g., GitHub Stats) -->
+  <div style="display: inline-block; padding: 10px;">
+    <img src="https://github-readme-stats.vercel.app/api?username=imrahul05&theme=tokyonight&show_icons=true&hide_border=true&count_private=true" width="350">
   </div>
 </div>
-
-<style>
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-</style>
-
 
 
 &nbsp;<div align="center">
