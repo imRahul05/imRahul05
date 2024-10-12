@@ -28,31 +28,56 @@
 <br> 
 
 <div align="center">
-  <button onclick="toggleSpotify()">Show Spotify</button>
-  <button onclick="toggleDevCard()">Show DevCard</button>
+  <input type="radio" id="spotify" name="toggle" checked>
+  <label for="spotify">Spotify</label>
+  <input type="radio" id="devcard" name="toggle">
+  <label for="devcard">DevCard</label>
 
-  <div id="spotify" style="display:none;">
-    <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
-      <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350">
-    </a>
-  </div>
+  <div>
+    <!-- Spotify Widget -->
+    <div class="content" id="spotify-content">
+      <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
+        <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350">
+      </a>
+    </div>
 
-  <div id="devcard" style="display:none;">
-    <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" width="350">
+    <!-- DevCard Widget -->
+    <div class="content" id="devcard-content" style="display:none;">
+      <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" width="350">
+    </div>
   </div>
 </div>
 
-<script>
-  function toggleSpotify() {
-    document.getElementById('spotify').style.display = 'block';
-    document.getElementById('devcard').style.display = 'none';
+<style>
+  /* Hide all content sections */
+  #spotify-content, #devcard-content {
+    display: none;
   }
 
-  function toggleDevCard() {
-    document.getElementById('spotify').style.display = 'none';
-    document.getElementById('devcard').style.display = 'block';
+  /* Display the content based on which radio is selected */
+  input[type="radio"]#spotify:checked ~ div #spotify-content {
+    display: block;
   }
-</script>
+
+  input[type="radio"]#devcard:checked ~ div #devcard-content {
+    display: block;
+  }
+
+  /* Style the labels */
+  label {
+    cursor: pointer;
+    padding: 5px 15px;
+    background-color: #f75c7e;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+</style>
+
 
 
 
