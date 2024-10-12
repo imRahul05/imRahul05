@@ -31,9 +31,7 @@
 <table align="center" width="100%" style="border-collapse: collapse;">
   <tr>
     <td align="center" width="50%" style="padding: 10px;">
-      <a href="https://open.spotify.com/collection/tracks">
-        <img src="https://spotify-github-profile-oj9z455vt-rahuls-projects-a4d4f684.vercel.app/" alt="Spotify Profile" width="350" style="border-radius: 15px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-      </a>
+     [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true)
     </td>
     <td align="center" width="50%" style="padding: 10px;">
       <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" alt="Rahul's Dev Card" width="350" style="border-radius: 15px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
