@@ -28,12 +28,22 @@
 <br>
 
 
+<table align="center" width="100%" style="border-collapse: collapse;">
+  <tr>
+    <td align="center" width="50%" style="padding: 10px;">
+      <a href="https://open.spotify.com/collection/tracks">
+        <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31brap4qtpogw3xyjexrhrmkrjq4&cover_image=true&theme=default&show_offline=false&background_color=000000&interchange=true&bar_color=f2f3f3](https://spotify-github-profile.vercel.app/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true" alt="Spotify Profile" width="350" style="border-radius: 15px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      </a>
+    </td>
+    <td align="center" width="50%" style="padding: 10px;">
+      <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" alt="Rahul's Dev Card" width="350" style="border-radius: 15px; border: 1px solid #ddd; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    </td>
+  </tr>
+</table>
 
-<a href="https://app.daily.dev/imrahul05"><img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" width="356" alt="RAHUL's Dev Card"/></a>
-&nbsp;<div align="center">
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true)
+
   
-</div>
+
 
 &nbsp;<div align="center">
  ![](https://github-profile-trophy.vercel.app/?username=imrahul05&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4)
