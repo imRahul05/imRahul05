@@ -28,8 +28,7 @@
 <br> 
 
 <div align="center">
-  <button onclick="toggleSpotify()">Show Spotify</button>
-  <button onclick="toggleDevCard()">Show DevCard</button>
+
 
   <div id="spotify" style="display:none;">
     <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
