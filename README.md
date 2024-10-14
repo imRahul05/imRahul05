@@ -37,7 +37,7 @@
   </div>
 
   <div id="devcard" style="display:none;">
-    <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=2k0" width="350">
+    <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=8hs" width="350">
   </div>
 </div>
 
