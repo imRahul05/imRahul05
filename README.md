@@ -8,28 +8,21 @@
 </p>
 
 
-<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
-  <!-- Left Side (Text) -->
-  <div style="flex: 1; min-width: 250px;">
-    <p align="left"> 
-      <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" /> 
-    </p>
-    <ul>
-      <li>🔭 I’m currently Studying MCA at VTU.</li>
-      <li>🌱 I’m currently learning <strong>React.js, Node.js, Express.Js and MongoDB</strong></li>
-      <li>💬 Ask me about <strong>C, HTML, CSS, JavaScript</strong></li>
-      <li>📫 How to reach me - <strong>rahulkumar20000516@gmail.com</strong></li>
-      <li>📄 My Resume - <a href="https://imrahul05.vercel.app/resume">Click Here</a></li>
-      <li>⚡ Fun fact <strong>I am a cinephile</strong></li>
-    </ul>
-  </div>
+<p align="left"> 
+  <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" /> 
+</p>
+<ul>
+  <li>🔭 I’m currently Studying MCA at VTU.</li>
+  <li>🌱 I’m currently learning <strong>React.js, Node.js, Express.Js and MongoDB</strong></li>
+  <li>💬 Ask me about <strong>C, HTML, CSS, JavaScript</strong></li>
+  <li>📫 How to reach me - <strong>rahulkumar20000516@gmail.com</strong></li>
+  <li>📄 My Resume - <a href="https://imrahul05.vercel.app/resume">Click Here</a></li>
+  <li>⚡ Fun fact <strong>I am a cinephile</strong></li>
+</ul>
 
-  <!-- Right Side (Image) -->
-  <div style="flex: 1; min-width: 250px; text-align: center;">
-    <img alt="coding.." width="360" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2NjeWVzOXIwd2I2N3ZuN2kwd3AxZXU4eDNydTNtbWoyaDJieHFjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif">
-  </div>
-</div>
-
+<p align="center">
+  <img alt="coding.." width="360" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2NjeWVzOXIwd2I2N3ZuN2kwd3AxZXU4eDNydTNtbWoyaDJieHFjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif">
+</p>
 <br> 
 
 <div align="center">
