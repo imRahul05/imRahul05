@@ -1,8 +1,5 @@
 <h1 align="center" style="color:#006666;">Rahul</h1>
 
-```sh
-RAHUL
-```
 
 <p align="center">
   <!-- Typing SVG by DenverCoder1 - https://github.com/DenverCoder1/readme-typing-svg -->
@@ -19,7 +16,9 @@ RAHUL
 
 - 🔭 I’m currently Studying MCA at VTU.
 
+```sh
 - 🌱 I’m currently learning **React.js, Node.js , Express.Js and MongoDB**
+```
 
 - 💬 Ask me about **C, HTML, CSS, JavaScript**
 
