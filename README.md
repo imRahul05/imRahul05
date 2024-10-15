@@ -17,12 +17,13 @@
 - 🔭 I’m currently Studying MCA at VTU.
 
 ```sh
-- 🌱 I’m currently learning **React.js, Node.js , Express.Js and MongoDB**
+- 🌱 I’m currently learning React.js, Node.js , Express.Js and MongoDB
 ```
 
 - 💬 Ask me about **C, HTML, CSS, JavaScript**
 
-- 📫 How to reach me ```sh rahulkumar20000516@gmail.com 
+- 📫 How to reach me ```sh
+  rahulkumar20000516@gmail.com 
                      ```
 - 📄 MY Resume - [Click Here](https://imrahul05.vercel.app/resume)
 
