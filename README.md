@@ -80,4 +80,5 @@
 <br>
 
 
- <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=8hs](https://gist.github.com/imRahul05/508417aff9ad76f4ae969255fa143c52.js" width="350">
+Check out this code snippet from my [Gist](https://gist.github.com/imRahul05/508417aff9ad76f4ae969255fa143c52).
+
