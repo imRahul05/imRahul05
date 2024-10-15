@@ -8,21 +8,24 @@
 </p>
 
 
-<p align="left"> 
-  <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" /> 
-</p>
-<ul>
-  <li>🔭 I’m currently Studying MCA at VTU.</li>
-  <li>🌱 I’m currently learning <strong>React.js, Node.js, Express.Js and MongoDB</strong></li>
-  <li>💬 Ask me about <strong>C, HTML, CSS, JavaScript</strong></li>
-  <li>📫 How to reach me - <strong>rahulkumar20000516@gmail.com</strong></li>
-  <li>📄 My Resume - <a href="https://imrahul05.vercel.app/resume">Click Here</a></li>
-  <li>⚡ Fun fact <strong>I am a cinephile</strong></li>
-</ul>
+<img align="right" alt="coding.."  width="360"  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2NjeWVzOXIwd2I2N3ZuN2kwd3AxZXU4eDNydTNtbWoyaDJieHFjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif">
 
-<p align="center">
-  <img alt="coding.." width="360" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2NjeWVzOXIwd2I2N3ZuN2kwd3AxZXU4eDNydTNtbWoyaDJieHFjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif">
-</p>
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" /> </p>
+
+
+- 🔭 I’m currently Studying MCA at VTU.
+
+- 🌱 I’m currently learning **React.js, Node.js , Express.Js and MongoDB**
+
+- 💬 Ask me about **C, HTML, CSS, JavaScript**
+
+- 📫 How to reach me - **rahulkumar20000516@gmail.com**
+
+- 📄 MY Resume - [Click Here](https://imrahul05.vercel.app/resume)
+
+- ⚡ Fun fact **I am a cinephile**
+
 <br> 
 
 <div align="center">
