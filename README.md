@@ -43,7 +43,7 @@
 </div>
 
 
-<br>
+<hr>
 
 &nbsp;<div align="center">
  ![](https://github-profile-trophy.vercel.app/?username=imrahul05&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4)
