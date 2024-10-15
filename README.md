@@ -22,8 +22,8 @@
 
 - 💬 Ask me about **C, HTML, CSS, JavaScript**
 
-- 📫 How to reach me ```sh rahulkumar20000516@gmail.com ```
-
+- 📫 How to reach me ```sh rahulkumar20000516@gmail.com 
+                     ```
 - 📄 MY Resume - [Click Here](https://imrahul05.vercel.app/resume)
 
 - ⚡ Fun fact **I am a cinephile**
