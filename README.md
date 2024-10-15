@@ -27,7 +27,7 @@
 - ⚡ Fun fact **I am a cinephile**
 
 <br> 
-
+<hr>
 <div align="center">
 
 
