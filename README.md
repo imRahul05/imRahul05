@@ -76,6 +76,7 @@
 ![imrahul05's Stats](https://github-readme-stats.vercel.app/api?username=imrahul05&theme=tokyonight&show_icons=true&hide_border=true&count_private=true)
 
 ![imrahul05's Streak](https://github-readme-streak-stats.herokuapp.com/?user=imrahul05&theme=tokyonight&hide_border=true)
+![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark)
 <hr>
 <br>
 
