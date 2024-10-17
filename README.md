@@ -71,7 +71,8 @@
 
 
 <br><hr>
-![imrahul05's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=imrahul05&theme=tokyonight&show_icons=true&hide_border=true&layout=compact)
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=imrahul05&theme=github_dark)
 
 ![imrahul05's Stats](https://github-readme-stats.vercel.app/api?username=imrahul05&theme=tokyonight&show_icons=true&hide_border=true&count_private=true)
 
