@@ -107,6 +107,5 @@
 Check out this code snippet from my [Gist](https://gist.github.com/imRahul05/508417aff9ad76f4ae969255fa143c52).
 
 
-[![The End Gif GIF](https://media.tenor.com/images/2c1f56f023a8f75ed7e0a632155fdfb1/tenor.gif)](https://tenor.com/view/the-end-gif-text-complete-done-gif-18917396)
-
+[![The End Gif GIF](https://media1.tenor.com/m/MBDLgfSd_UgAAAAC/the-end-gif.gif)
 
