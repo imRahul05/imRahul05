@@ -107,6 +107,7 @@ Check out this code snippet from my [Gist](https://gist.github.com/imRahul05/508
 
 [![The End Gif GIF](https://media1.tenor.com/m/MBDLgfSd_UgAAAAC/the-end-gif.gif)
 
+[Follow me on Instagram](https://www.instagram.com/imrahul512/profilecard/?igsh=Z284a2twcGd0dHU4)
 
 
 
