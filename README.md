@@ -87,8 +87,6 @@
     <td colspan="2">
       <img src="https://github-readme-stats.vercel.app/api?username=imrahul05&theme=tokyonight&show_icons=true&hide_border=true&count_private=true" alt="imrahul05's Stats">
     </td>
-  </tr>
-  <tr>
     <!-- Streak Stats -->
     <td colspan="2">
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=imrahul05&theme=tokyonight&hide_border=true" alt="imrahul05's Streak">
