@@ -43,7 +43,7 @@
   </div>
 </div>
 <hr>
-![LeetCode Stats](https://leetcard.jacoblin.cool/imrahul05?theme=dark&font=Anybody)
+![LeetCode Stats](https://leetcard.jacoblin.cool/imRahul05?theme=dark&font=Anybody)
 
 <hr>
 
