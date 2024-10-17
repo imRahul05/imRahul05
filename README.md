@@ -94,6 +94,9 @@
       <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark" alt="Profile Details">
     </td>
   </tr>
+
+
+  
 </table>
 
 
@@ -102,4 +105,5 @@
 
 
 Check out this code snippet from my [Gist](https://gist.github.com/imRahul05/508417aff9ad76f4ae969255fa143c52).
+![GIF](https://tenor.com/view/coding-gif-brxrs.gif)
 
