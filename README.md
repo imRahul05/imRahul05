@@ -3,7 +3,7 @@
 
 <p align="center">
   <!-- Typing SVG by DenverCoder1 - https://github.com/DenverCoder1/readme-typing-svg -->
-  <a href="https://github.com/DenverCoder1/readme-typing-svg">
+ [View on Giphy](https://giphy.com/gifs/ducks-hunt-sample-o3Vt7LBQZa8pi)
     <img src="https://readme-typing-svg.demolab.com/?lines=Frontend%20web%20and%20app%20developer;Student;Smart%20India%20Hackathon%202023%20Winner;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=00b8e6&vCenter=true&pause=1000&size=22" /></a>
 </p>
 
@@ -110,7 +110,6 @@ Check out this code snippet from my [Gist](https://gist.github.com/imRahul05/508
 [![The End Gif GIF](https://media1.tenor.com/m/MBDLgfSd_UgAAAAC/the-end-gif.gif)
 ![GIF](https://media.giphy.com/media/o3Vt7LBQZa8pi/giphy.gif)
 
-[View on Giphy](https://giphy.com/gifs/ducks-hunt-sample-o3Vt7LBQZa8pi)
 
 
 
