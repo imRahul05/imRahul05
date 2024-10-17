@@ -38,6 +38,10 @@
 
   <div id="devcard" style="display:none;">
     <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=8hs" width="350">
+     <img src="https://www.instagram.com/imrahul512/profilecard/?igsh=Z284a2twcGd0dHU4" width="350">
+
+
+
   </div>
 </div>
 
@@ -106,8 +110,6 @@
 Check out this code snippet from my [Gist](https://gist.github.com/imRahul05/508417aff9ad76f4ae969255fa143c52).
 
 [![The End Gif GIF](https://media1.tenor.com/m/MBDLgfSd_UgAAAAC/the-end-gif.gif)
-
-[Follow me on Instagram](https://www.instagram.com/imrahul512/profilecard/?igsh=Z284a2twcGd0dHU4)
 
 
 
