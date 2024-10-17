@@ -71,14 +71,37 @@
 
 
 <br><hr>
+<table>
+  <tr>
+    <!-- Repositories per Language -->
+    <td>
+      <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=imrahul05&theme=github_dark" alt="Repos per Language">
+    </td>
+    <!-- Productive Time -->
+    <td>
+      <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imrahul05&theme=github_dark&utcOffset=8" alt="Productive Time">
+    </td>
+  </tr>
+  <tr>
+    <!-- GitHub Stats -->
+    <td colspan="2">
+      <img src="https://github-readme-stats.vercel.app/api?username=imrahul05&theme=tokyonight&show_icons=true&hide_border=true&count_private=true" alt="imrahul05's Stats">
+    </td>
+  </tr>
+  <tr>
+    <!-- Streak Stats -->
+    <td colspan="2">
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=imrahul05&theme=tokyonight&hide_border=true" alt="imrahul05's Streak">
+    </td>
+  </tr>
+  <tr>
+    <!-- Profile Details -->
+    <td colspan="2">
+      <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark" alt="Profile Details">
+    </td>
+  </tr>
+</table>
 
-![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=imrahul05&theme=github_dark)
-![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imrahul05&theme=github_dark&utcOffset=8)
-
-![imrahul05's Stats](https://github-readme-stats.vercel.app/api?username=imrahul05&theme=tokyonight&show_icons=true&hide_border=true&count_private=true)
-
-![imrahul05's Streak](https://github-readme-streak-stats.herokuapp.com/?user=imrahul05&theme=tokyonight&hide_border=true)
-![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark)
 <hr>
 <br>
 
