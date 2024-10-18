@@ -11,7 +11,7 @@
     <!-- Left Side (Text) -->
     <td>
       <p align="left"> 
-        <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" />
+        <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05"/>
       </p>
       <ul>
         <li>🔭 I’m currently Studying MCA at VTU.</li>
@@ -24,7 +24,7 @@
     </td>
     <!-- Right Side (Metrics) -->
     <td>
-      <img src="https://metrics.lecoq.io/imrahul05?template=classic&base.hireable=true&base.header=0&base.activity=0&base.community=0&base.repositories=0&base.metadata=0&isocalendar=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=true&base.skip=false&isocalendar=false&isocalendar.duration=full-year&config.timezone=Asia%2FCalcutta&config.twemoji=true&config.octicon=true" alt="Metrics" width="400">
+      <img src="https://metrics.lecoq.io/imrahul05?template=classic&base.hireable=true&base.header=0&base.activity=0&base.community=0&base.repositories=0&base.metadata=0&isocalendar=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=true&base.skip=false&isocalendar=false&isocalendar.duration=full-year&config.timezone=Asia%2FCalcutta&config.twemoji=true&config.octicon=true" alt="Metrics" width="600">
     </td>
   </tr>
 </table>
