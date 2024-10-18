@@ -25,28 +25,28 @@
 
 <br> 
 <hr>
-<div align="center">
-
-
-  <div id="spotify" style="display:none;">
-    <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
-      <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350">
-    </a>
-  </div>
-
-  <div id="devcard" style="display:none;">
-    <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=8hs" width="350">
-   
-
-
-
-  </div>
-</div>
+<table>
+  <tr>
+    <!-- Left Side (DevCard) -->
+    <td>
+      <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=8hs" width="350" alt="DevCard">
+    </td>
+    <!-- Right Side (LeetCode and Spotify) -->
+    <td>
+      <div align="center">
+        <!-- LeetCode Card -->
+        <img src="https://leetcard.jacoblin.cool/imRahul05?theme=dark&font=Anybody" width="350" alt="LeetCode Stats">
+        <br>
+        <!-- Spotify Card -->
+        <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
+          <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350" alt="Spotify Profile">
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>
 <hr>
-  
-![LeetCode Stats](https://leetcard.jacoblin.cool/imRahul05?theme=dark&font=Anybody)
 
-<hr>
 
 &nbsp;<div align="center">
  ![](https://github-profile-trophy.vercel.app/?username=imrahul05&theme=tokyonight&no-frame=true&no-bg=false&margin-w=4)
