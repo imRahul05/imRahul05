@@ -6,24 +6,29 @@
     <img src="https://readme-typing-svg.demolab.com/?lines=Frontend%20web%20and%20app%20developer;Student;Smart%20India%20Hackathon%202023%20Winner;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=00b8e6&vCenter=true&pause=1000&size=22" /></a>
 </p>
 
-![Metrics](https://metrics.lecoq.io/imrahul05?template=terminal&base.header=0&base.activity=0&base.community=0&base.repositories=0&base.metadata=0&isocalendar=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&isocalendar=false&isocalendar.duration=full-year&config.timezone=Asia%2FCalcutta)
+<table>
+  <tr>
+    <!-- Left Side (Text) -->
+    <td>
+      <p align="left"> 
+        <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" />
+      </p>
+      <ul>
+        <li>🔭 I’m currently Studying MCA at VTU.</li>
+        <li>🌱 I’m currently learning <strong>React.js, Node.js, Express.Js and MongoDB</strong></li>
+        <li>💬 Ask me about <strong>C, HTML, CSS, JavaScript</strong></li>
+        <li>📫 How to reach me - <strong>rahulkumar20000516@gmail.com</strong></li>
+        <li>📄 My Resume - <a href="https://imrahul05.vercel.app/resume">Click Here</a></li>
+        <li>⚡ Fun fact <strong>I am a cinephile</strong></li>
+      </ul>
+    </td>
+    <!-- Right Side (Metrics) -->
+    <td>
+      <img src="https://metrics.lecoq.io/imrahul05?template=terminal&base.header=0&base.activity=0&base.community=0&base.repositories=0&base.metadata=0&isocalendar=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&isocalendar=false&isocalendar.duration=full-year&config.timezone=Asia%2FCalcutta" alt="Metrics" width="400">
+    </td>
+  </tr>
+</table>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05" /> </p>
-
-
-- 🔭 I’m currently Studying MCA at VTU.
-
-- 🌱 I’m currently learning **React.js, Node.js , Express.Js and MongoDB**
-
-- 💬 Ask me about **C, HTML, CSS, JavaScript**
-
-- 📫 How to reach me - **rahulkumar20000516@gmail.com**
-
-- 📄 MY Resume - [Click Here](https://imrahul05.vercel.app/resume)
-
-- ⚡ Fun fact **I am a cinephile**
-
-<br> 
 <hr>
 <table>
   <tr>
