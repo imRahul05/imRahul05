@@ -114,6 +114,3 @@
   Check out this code snippet from my <a href="https://gist.github.com/imRahul05/508417aff9ad76f4ae969255fa143c52">Gist</a>.
 </p>
 
-<p align="center">
-  <img src="https://leetcard.imrahul05/leetcode?site=cn" alt="LeetCode Card">
-</p>
