@@ -1,6 +1,4 @@
 <h1 align="center" style="color:#006666;">Rahul</h1>
-
-[![](https://visitcount.itsvg.in/api?id=imRahul05&label=11111&color=6&icon=8&pretty=true)](https://visitcount.itsvg.in)
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?lines=Frontend%20web%20and%20app%20developer;Student;Smart%20India%20Hackathon%202023%20Winner;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=440&height=45&color=00b8e6&vCenter=true&pause=1000&size=22" />
 </p>
@@ -115,3 +113,4 @@
   Check out this code snippet from my <a href="https://gist.github.com/imRahul05/508417aff9ad76f4ae969255fa143c52">Gist</a>.
 </p>
 
+[![](https://visitcount.itsvg.in/api?id=imRahul05&label=11111&color=6&icon=8&pretty=true)](https://visitcount.itsvg.in)
