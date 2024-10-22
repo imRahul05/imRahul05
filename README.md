@@ -26,21 +26,11 @@
 
 <table>
   <tr>
-    <td style="vertical-align: top;">
-      <div style="display: flex; flex-direction: column; align-items: flex-start;">
-        <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++ icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="NGINX icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java icon" width="65" height="65" />
-      </div>
+    <td>
+      <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=8hs" width="350" alt="DevCard">
     </td>
     <td>
       <div align="center">
-        <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=8hs" width="350" alt="DevCard">
-        <br>
         <img src="https://leetcard.jacoblin.cool/imRahul05?theme=dark&font=Anybody" width="350" alt="LeetCode Stats">
         <br>
         <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
@@ -50,7 +40,6 @@
     </td>
   </tr>
 </table>
-
 <hr>
 
 <h3 align="left">Connect with me:</h3>
