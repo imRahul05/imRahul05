@@ -9,31 +9,18 @@
 
 <table>
   <tr>
-    <td style="vertical-align: top;">
-      <div style="display: flex; flex-direction: column; align-items: flex-start;">
-        <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++ icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/react-icon.svg" alt="React icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="NGINX icon" width="65" height="65" />
-        <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java icon" width="65" height="65" />
-      </div>
+    <td>
+      <ul>
+        <li>🔭 I’m currently Studying MCA at VTU.</li>
+        <li>🌱 I’m currently learning <strong>React.js, Node.js, Express.Js and MongoDB</strong></li>
+        <li>💬 Ask me about <strong>C, HTML, CSS, JavaScript</strong></li>
+        <li>📫 How to reach me - <strong>rahulkumar20000516@gmail.com</strong></li>
+        <li>📄 My Resume - <a href="https://imrahul05.vercel.app/resume">Click Here</a></li>
+        <li>⚡ Fun fact <strong>I am a cinephile</strong></li>
+      </ul>
     </td>
     <td>
-      <div align="center" style="display: flex; flex-direction: column; align-items: center;">
-        <img src="https://api.daily.dev/devcards/v2/fTT8B7AGEhSjeRNLKq65N.png?type=default&r=8hs" width="350" alt="DevCard" />
-        <br>
-        <img src="https://leetcard.jacoblin.cool/imRahul05?theme=dark&font=Anybody" width="350" alt="LeetCode Stats" />
-        <br>
-        <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
-          <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350" alt="Spotify Profile" />
-        </a>
-      </div>
-    </td>
-  </tr>
-</table>
-
+      <img src="https://metrics.lecoq.io/imrahul05?template=classic&base.hireable=true&base.header=0&base.activity=0&base.community=0&base.repositories=0&base.metadata=0&isocalendar=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=true&base.skip=false&isocalendar=false&isocalendar.duration=full-year&config.timezone=Asia%2FCalcutta&config.twemoji=true&config.octicon=true" alt="Metrics" width="600">
 
 <hr>
 
