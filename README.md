@@ -19,7 +19,8 @@
         <li>⚡ Fun fact: <strong>I am a cinephile</strong></li>
       </ul>
     </td>
-    <td> ![Alt text](https://raw.githubusercontent.com/imRahul05/imRahul05/main/giphy.gif)
+    <td> 
+	     <img src="https://raw.githubusercontent.com/imRahul05/imRahul05/main/giphy.gif" alt="GIF" />
     </td>
   </tr>
 </table>
