@@ -25,6 +25,7 @@
     </td>
     <td> 
 	     <img src="https://raw.githubusercontent.com/imRahul05/imRahul05/main/giphy.gif" alt="GIF" />
+	    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGJmNWQzajg2Z2lpdTBkczFxY29xNmpwM3Ficmlqdjl1Nzd1Mm01cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dRvEZLV0ORAmHT1L5u/giphy.webp">
     </td>
   </tr>
 </table>
