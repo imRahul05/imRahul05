@@ -24,7 +24,7 @@
       </ul>
     </td>
     <td> 
-	     <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2E1czdyNTgwMWswOXBxMGU2anM0eTl1eGhzcWQxaTY1ZnZueDZrMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RiykPw9tgdOylwFgUe/giphy.webp" alt="GIF" />
+	     <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2wwZ2FpbGp5a3V2Y2c5N21tdWRpd2hxNmZuNHoxdXlvOTUxa3Y1dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/487L0pNZKONFN01oHO/giphy.webp" alt="GIF" />
     </td>
   </tr>
 </table>
