@@ -111,3 +111,7 @@
 </p>
 
 [![](https://visitcount.itsvg.in/api?id=imRahul05&label=11111&color=6&icon=8&pretty=true)](https://visitcount.itsvg.in)
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer"/>
+</p>
