@@ -99,7 +99,9 @@
   <tr>
     <td colspan="2">
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=imrahul05&theme=tokyonight&hide_border=true" alt="imrahul05's Streak">
-      [![GitHub Streak](https://nirzak-streak-stats.vercel.app?user=imrahul05&theme=android-dark)](https://git.io/streak-stats)
+	    
+      
+[![GitHub Streak](https://nirzak-streak-stats.vercel.app?user=imrahul05&theme=android-dark)](https://git.io/streak-stats)
     </td>
   </tr>
   <tr>
