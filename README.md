@@ -95,13 +95,10 @@
     <td>
       <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imrahul05&theme=github_dark&utcOffset=8" alt="Productive Time">
     </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-<!--       <img src="https://github-readme-streak-stats.herokuapp.com/?user=imrahul05&theme=tokyonight&hide_border=true" alt="imrahul05's Streak"> -->
-	    
-      
-[![GitHub Streak](https://nirzak-streak-stats.vercel.app?user=imrahul05&theme=android-dark)](https://git.io/streak-stats)
+    <td>
+      <a href="https://git.io/streak-stats">
+        <img src="https://nirzak-streak-stats.vercel.app?user=imrahul05&theme=android-dark" alt="imrahul05's Streak">
+      </a>
     </td>
   </tr>
   <tr>
