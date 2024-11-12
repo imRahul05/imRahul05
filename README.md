@@ -95,29 +95,12 @@
 <hr>
 <!-- ththth -->
 <table>
-  <tr>
-    <td>
-      <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=imrahul05&theme=github_dark" alt="Repos per Language">
-    </td>
-    <td>
-      <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imrahul05&theme=github_dark&utcOffset=8" alt="Productive Time">
-    </td>
-    <td>
-      <a href="https://git.io/streak-stats">
-        <img src="https://nirzak-streak-stats.vercel.app?user=imrahul05&theme=android-dark" alt="imrahul05's Streak">
-      </a>
-    </td>
-  </tr>
-  <tr>
     <td colspan="2">
 	    <details>
   <summary>More stats</summary>
   
 <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark" >
-
-
 </details>
-<!--       <img src="" alt="Profile Details"> -->
     </td>
   </tr>
 </table>
