@@ -38,22 +38,22 @@
        <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="icon" width="65" height="65" /></div><div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/js-icon.svg" alt="icon" width="65" height="65" /></div><div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/react-icon.svg" alt="icon" width="65" height="65" /></div><div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/github-icon.svg" alt="icon" width="65" height="65" /></div><div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="65" height="65" /></div><div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="icon" width="65" height="65" /></div><div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="65" height="65" /></div>
     </td>  
     <td>
-      <div align="center">
+        <div align="center">
+        <img src="https://leetcard.jacoblin.cool/imRahul05?theme=dark&font=Anybody" width="350" alt="LeetCode Stats">
+        <br>
+        <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
+          <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350" alt="Spotify Profile">
+        </a>
+      </div>
+    </td>
+    <td>
+	     <div align="center">
         <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=imrahul05&theme=github_dark">
         <br>
           <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imrahul05&theme=github_dark&utcOffset=8" alt="Productive Time" style="width: 250px; height: auto;">  
         <a href="https://git.io/streak-stats">
         <img src="https://nirzak-streak-stats.vercel.app?user=imrahul05&theme=android-dark" alt="imrahul05's Streak" style="width: 250px; height: auto;">
       </a>
-      </div>
-    </td>
-    <td>
-      <div align="center">
-        <img src="https://leetcard.jacoblin.cool/imRahul05?theme=dark&font=Anybody" width="350" alt="LeetCode Stats">
-        <br>
-        <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
-          <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350" alt="Spotify Profile">
-        </a>
       </div>
     </td>
   </tr>
