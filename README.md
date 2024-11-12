@@ -24,7 +24,7 @@
       </ul>
     </td>
     <td> 
-	     <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2wwZ2FpbGp5a3V2Y2c5N21tdWRpd2hxNmZuNHoxdXlvOTUxa3Y1dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/487L0pNZKONFN01oHO/giphy.webp" alt="GIF" />
+	     <img src="https://media1.tenor.com/m/xFUGScgp7V8AAAAC/computer-code.gif" alt="GIF" />
     </td>
   </tr>
 </table>
