@@ -47,14 +47,14 @@
       </div>
     </td>
     <td>
-	     <div align="center">
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=imrahul05&theme=github_dark">
-        <br>
-          <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imrahul05&theme=github_dark&utcOffset=8" alt="Productive Time" style="width: 250px; height: auto;">  
-        <a href="https://git.io/streak-stats">
-        <img src="https://nirzak-streak-stats.vercel.app?user=imrahul05&theme=android-dark" alt="imrahul05's Streak" style="width: 250px; height: auto;">
-      </a>
-      </div>
+   <div align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=imrahul05&theme=github_dark" style="width: 300px; height: auto;">
+  <br>
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imrahul05&theme=github_dark&utcOffset=8" alt="Productive Time" style="width: 300px; height: auto;">
+  <a href="https://git.io/streak-stats">
+    <img src="https://nirzak-streak-stats.vercel.app?user=imrahul05&theme=android-dark" alt="imrahul05's Streak" style="width: 300px; height: auto;">
+  </a>
+</div>
     </td>
   </tr>
 </table>
