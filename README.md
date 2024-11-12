@@ -106,7 +106,14 @@
   </tr>
   <tr>
     <td colspan="2">
-      <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark" alt="Profile Details">
+	    <details>
+  <summary>More stats</summary>
+  
+<img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark" >
+
+
+</details>
+<!--       <img src="" alt="Profile Details"> -->
     </td>
   </tr>
 </table>
