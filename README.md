@@ -29,7 +29,7 @@
   </tr>
 </table>
 
-
+ <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=20&section=header&reverse=true"/>
 <hr>
 <table style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
   <tr style="display: flex; flex-direction: row; width: 100%;">
