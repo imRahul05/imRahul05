@@ -117,7 +117,7 @@
   <summary>More stats</summary>
   
 <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark" >
-<a href="https://wakatime.com"><img src="https://wakatime.com/share/@09927298-a1f5-4e5d-becd-475417128259/0e4dfc37-eaa9-461f-93c8-5439406aa9f4.png" /></a>
+<a href="https://wakatime.com"><img src="https://wakatime.com/share/@09927298-a1f5-4e5d-becd-475417128259/da5fb1c8-1b6f-4e9b-86b9-44d475cfdedd.png" height='200px' width="400px" /></a>
     
 </details>
     </td>
