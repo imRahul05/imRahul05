@@ -118,7 +118,10 @@
   
 <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark" >
 
-<figure><embed src="https://wakatime.com/share/@09927298-a1f5-4e5d-becd-475417128259/7239cfa6-2e11-41b0-8417-078bdcd76c1d.svg"></embed></figure>
+.. image:: https://wakatime.com/share/@09927298-a1f5-4e5d-becd-475417128259/a86348fc-df0b-4b75-8753-cf10789a5689.png
+    :target: https://wakatime.com/
+
+    
 </details>
     </td>
   </tr>
