@@ -4,7 +4,7 @@
 
 <h1 align="center" style="color:#006666;">Rahul</h1>
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Frontend%20web%20and%20app%20developer;Student;Smart%20India%20Hackathon%202023%20Winner;Always%20learning%20new%20things&font=Roboto%20Code&center=true&width=440&height=45&color=00b8e6&vCenter=true&pause=1000&size=22" />
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&pause=1000&color=F7739E&background=BEFF7600&width=435&lines=Frontend+Web+Developer;App+developer;Smart+India+Hackathon+Winner+2023;software+Engineer" alt="Typing SVG" /></a>
   
   
 	
