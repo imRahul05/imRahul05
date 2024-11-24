@@ -4,9 +4,6 @@
 
 <p align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&pause=1000&color=9742F7&background=BEFF7600&center=true&vCenter=true&width=447&lines=Namaskaram++i+am+Rahul......;Frontend+Web+and+App+developer;Smart+India+Hackathon+Winner+2023;software+Engineer" alt="Typing SVG" /></a>
-  
-  
-	
 </p>
 
 <p align="center">
