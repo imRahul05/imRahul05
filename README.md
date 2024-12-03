@@ -15,7 +15,7 @@
     <td>
       <ul>
         <li>🎓 Completed  MCA at VTU</li>
-        <li>🚀 Diving deeper into: <strong>React.js, Node.js, Express.js & MongoDB Express.js</strong></li>
+        <li>🚀 Diving deeper into: <strong>JavaScript, React.js, Node.js, Express.js & MongoDB Express.js</strong></li>
         <li>👨‍💻 Ask me about:<strong>C, HTML, CSS, JavaScript</strong></li>
         <li>📬 Let’s Connect: <strong> rahulkumar20000516@gmail.com</strong></li>
         <li>📄 Resume:  <a href="https://imrahul05.vercel.app/resume">View Here</a></li>
