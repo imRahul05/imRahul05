@@ -1,7 +1,8 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&reverse=true"/>
+	 <img src="https://raw.githubusercontent.com/imRahul05/imRahul05/main/git.webp" style="height: 300px; width: 500px; align:centre" />
+
 </p>
- <img src="https://raw.githubusercontent.com/imRahul05/imRahul05/main/git.webp" style="height: 300px; width: 500px; align:centre" />
 
 <p align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&pause=1000&color=9742F7&background=BEFF7600&center=true&vCenter=true&width=447&lines=Namaskaram++i+am+Rahul......;Frontend+Web+and+App+developer;Smart+India+Hackathon+Winner+2023;software+Engineer" alt="Typing SVG" /></a>
