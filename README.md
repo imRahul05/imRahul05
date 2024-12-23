@@ -23,7 +23,7 @@
       </ul>
     </td>
     <td> 
-	     <img src="https://media1.tenor.com/m/xFUGScgp7V8AAAAC/computer-code.gif" alt="GIF" />
+ <img src="https://media1.tenor.com/m/xFUGScgp7V8AAAAC/computer-code.gif" alt="GIF" />
     </td>
   </tr>
 </table>
