@@ -1,5 +1,5 @@
 <!-- [--](https://github.com/imRahul05/imRahul05/blob/main/ff.mp4) -->
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7282478805795921921" height="1285" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
 <p align="center">
  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=header&reverse=true"/> 
 	 <img src="https://raw.githubusercontent.com/imRahul05/imRahul05/main/git.webp" style="height: 300px; width: 500px; align:centre" />
