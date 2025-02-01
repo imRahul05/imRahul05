@@ -56,7 +56,6 @@
     </td>
     <td style="flex: 1; text-align: center;">
       <img src="https://leetcard.jacoblin.cool/imRahul05?theme=dark&font=Anybody" height="300" width="450" alt="LeetCode Stats">
-<!--       <br> -->
       <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
         <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350" alt="Spotify Profile">
       </a>
