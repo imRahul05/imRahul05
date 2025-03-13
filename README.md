@@ -26,7 +26,6 @@
     </td>
   </tr>
 </table>
-
  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=40&section=header&reverse=true"/>
 <hr>
 <table style="width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
