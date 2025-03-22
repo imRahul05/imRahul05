@@ -66,6 +66,8 @@
       <a href="https://git.io/streak-stats">
         <img src="https://nirzak-streak-stats.vercel.app?user=imrahul05&theme=android-dark" alt="imrahul05's Streak" style="width: 300px; height: auto;">
       </a>
+    <a>![imrahul05's Stats](https://github-readme-stats.vercel.app/api?username=imrahul05&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
+    </a>
     </td>
   </tr>
 </table>
