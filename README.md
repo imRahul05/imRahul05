@@ -103,15 +103,22 @@
 	<code><img width="42" src="https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png" alt="mongoDB" title="mongoDB"/></code>
 </div>
 <hr>
+
 <table>
     <td colspan="2">
 	    <details>
   <summary>More stats</summary>
-     [imrahul05's Stats](https://github-readme-stats.vercel.app/api?username=imrahul05&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
 
-<img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark" >
-<a href="https://wakatime.com"><img src="https://wakatime.com/share/@09927298-a1f5-4e5d-becd-475417128259/da5fb1c8-1b6f-4e9b-86b9-44d475cfdedd.png" height='200px' width="400px" /></a>
-    
+  <a href="https://github.com/imrahul05">
+    <img src="https://github-readme-stats.vercel.app/api?username=imrahul05&theme=merko&show_icons=true&hide_border=false&count_private=true" />
+  </a>
+
+  <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark" />
+
+  <a href="https://wakatime.com">
+    <img src="https://wakatime.com/share/@09927298-a1f5-4e5d-becd-475417128259/da5fb1c8-1b6f-4e9b-86b9-44d475cfdedd.png" height="200px" width="400px" />
+  </a>
+
 </details>
     </td>
   </tr>
