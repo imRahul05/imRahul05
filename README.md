@@ -71,16 +71,20 @@
 </table>
 <hr>
 <h3 align="left">Connect with me:</h3>
-<p align="left">
-  <a href="https://twitter.com/@imrahul__05" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@imrahul__05" height="30" width="40" /></a>
-  <a href="https://linkedin.com/in/imrahul05" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="imrahul05" height="30" width="40" /></a>
-  <a href="https://instagram.com/@imrahul2516" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="@imrahul2516" height="30" width="40" /></a>
-  <a href="https://www.youtube.com/c/mangaamaze - joyboy" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="mangaamaze - joyboy" height="30" width="40" /></a>
-  <a href="https://www.hackerrank.com/imrahul05" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="imrahul05" height="30" width="40" /></a>
-  <a href="https://www.leetcode.com/imrahul05" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="imrahul05" height="30" width="40" /></a>
-  <a href="https://www.hackerearth.com/imrahul05" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="imrahul05" height="30" width="40" /></a>
-  <a href="https://discord.gg/https://discord.com/invite/redhaired4387" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.com/invite/redhaired4387" height="30" width="40" /></a>
-</p>
+<table border="1" style="border-collapse: collapse;">
+  <tr>
+    <td><a href="https://twitter.com/@imrahul__05" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@imrahul__05" height="30" width="40" /></a></td>
+    <td><a href="https://linkedin.com/in/imrahul05" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="imrahul05" height="30" width="40" /></a></td>
+    <td><a href="https://instagram.com/@imrahul2516" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="@imrahul2516" height="30" width="40" /></a></td>
+    <td><a href="https://www.youtube.com/c/mangaamaze - joyboy" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="mangaamaze - joyboy" height="30" width="40" /></a></td>
+    <td><a href="https://www.hackerrank.com/imrahul05" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="imrahul05" height="30" width="40" /></a></td>
+    <td><a href="https://www.leetcode.com/imrahul05" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="imrahul05" height="30" width="40" /></a></td>
+    <td><a href="https://www.hackerearth.com/imrahul05" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerearth.svg" alt="imrahul05" height="30" width="40" /></a></td>
+    <td><a href="https://discord.gg/https://discord.com/invite/redhaired4387" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.com/invite/redhaired4387" height="30" width="40" /></a></td>
+  </tr>
+</table>
+
+
 
 <h3 align="left">Languages and Tools:</h3>
 
