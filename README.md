@@ -17,7 +17,6 @@
         <li>👨‍💻 Ask me about:<strong>C, HTML, CSS, JavaScript</strong></li>
         <li>📬 Let’s Connect: <strong> rahulkumar20000516@gmail.com</strong></li>
         <li>📄 Resume:  <a href="https://imrahul05.vercel.app/resume">View Here</a></li>
-        <li>⚡ Fun fact: <strong>I am a cinephile</strong></li>
       </ul>
     </td>
     <td> 
