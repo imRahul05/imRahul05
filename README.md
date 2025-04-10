@@ -146,8 +146,6 @@
 
   <img align="center" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark" />
 
-  
-
 </details>
     </td>
   </tr>
