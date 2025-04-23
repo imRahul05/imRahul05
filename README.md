@@ -132,9 +132,7 @@
     </td>
   </tr>
 </table>
-
 <hr>
-
 <table>
     <td colspan="2">
 	    <details>
