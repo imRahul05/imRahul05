@@ -51,7 +51,10 @@
         <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="65" height="65" />
       </div>
     </td>
-    <td style="flex: 1; text-align: center;">
+
+
+
+<td style="flex: 1; text-align: center;">
       <img src="https://leetcard.jacoblin.cool/imRahul05?theme=dark&font=Anybody" height="300" width="450" alt="LeetCode Stats">
       <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
         <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&cover_image=false&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=166a2f&bar_color_cover=true" width="350" alt="Spotify Profile">
