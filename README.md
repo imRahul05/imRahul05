@@ -12,7 +12,7 @@
   <tr>
     <td>
       <ul>
-        <li>🎓 Completed  MCA at VTU</li>
+        <li>🎓 Completed  MCA at VTU (Visvesvaraya Technological University)</li>
         <li>🚀 Diving deeper into: <strong>AI , JavaScript, React.js, Node.js, Express.js & MongoDB</strong></li>
         <li>👨‍💻 Ask me about:<strong>C, HTML, CSS, JavaScript</strong></li>
         <li>📬 Let’s Connect: <strong> rahulkumar20000516@gmail.com</strong></li>
