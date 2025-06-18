@@ -71,7 +71,7 @@
 <h3 align="left">Connect with me:</h3>
 <table border="1" style="border-collapse: collapse;">
   <tr>
-    <td><a href="https://twitter.com/@imrahul__05" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@imrahul__05" height="30" width="40" /></a></td>
+    <td><a href="https://twitter.com/@imrahul165" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@imrahul__05" height="30" width="40" /></a></td>
     <td><a href="https://linkedin.com/in/imrahul05" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="imrahul05" height="30" width="40" /></a></td>
     <td><a href="https://instagram.com/@imrahul2516" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="@imrahul2516" height="30" width="40" /></a></td>
     <td><a href="https://www.youtube.com/c/mangaamaze - joyboy" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="mangaamaze - joyboy" height="30" width="40" /></a></td>
