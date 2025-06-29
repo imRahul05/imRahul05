@@ -22,6 +22,9 @@
     <td> 
  <img src="https://media1.tenor.com/m/xFUGScgp7V8AAAAC/computer-code.gif" alt="GIF" />
     </td>
+
+
+
   </tr>
 </table>
  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=40&section=header&reverse=true"/>
