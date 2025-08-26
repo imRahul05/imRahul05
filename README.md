@@ -18,7 +18,7 @@
         <li>🚀 Diving deeper into: <strong>AI , JavaScript, React.js, Node.js, Express.js & MongoDB</strong></li>
         <li>👨‍💻 Ask me about:<strong>C, HTML, CSS, JavaScript</strong></li>
         <li>📬 Let’s Connect: <strong> rahulkumar20000516@gmail.com</strong></li>
-        <li>📄 Resume:  <a href="https://heyrahul05.vercel.app/assets/rahul_dev-CUJjOc3-.pdf">View Here</a></li>
+        <li>📄 Resume:  <a href="https://heyrahul05.vercel.app/Rahul_Kumar_Resume.pdf">View Here</a></li>
       </ul>
     </td>
     <td> 
