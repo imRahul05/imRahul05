@@ -66,9 +66,12 @@
       <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=imrahul05&theme=github_dark" style="width: 300px; height: auto;">
       <br>
       <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imrahul05&theme=github_dark&utcOffset=8" alt="Productive Time" style="width: 300px; height: auto;">
-      <a href="https://git.io/streak-stats">
+		
+		
+  ![imrahul05's Streak](https://github-readme-streak-stats.herokuapp.com/?user=imrahul05&theme=dark&hide_border=true)
+<!--       <a href="https://git.io/streak-stats">
         <img src="https://nirzak-streak-stats.vercel.app?user=imrahul05&theme=android-dark" alt="imrahul05's Streak" style="width: 300px; height: auto;">
-      </a>
+      </a> -->
     </td>
   </tr>
 </table>
