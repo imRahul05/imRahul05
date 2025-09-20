@@ -72,9 +72,7 @@
 <!--       <a href="https://git.io/streak-stats">
         <img src="https://nirzak-streak-stats.vercel.app?user=imrahul05&theme=android-dark" alt="imrahul05's Streak" style="width: 300px; height: auto;">
       </a> -->
-    </td>
 	  
-   
 </td>
   </tr>
 </table>
