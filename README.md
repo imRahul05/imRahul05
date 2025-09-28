@@ -5,10 +5,6 @@
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&pause=1000&color=9742F7&background=BEFF7600&center=true&vCenter=true&width=447&lines=Namaskaram++i+am+Rahul......;Frontend+Web+and+App+developer;Smart+India+Hackathon+Winner+2023;software+Engineer" alt="Typing SVG" /></a>
 </p>
 
-
-
-
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20views&color=0e75b6&style=flat" alt="imrahul05"/>
 <img href="https://codetime.dev" alt="CodeTime Badge" src="https://shields.jannchie.com/endpoint?style=social&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fv3%2Fusers%2Fshield%3Fuid%3D30555">
