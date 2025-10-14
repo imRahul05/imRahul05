@@ -86,7 +86,6 @@
     <td><a href="https://discord.gg/https://discord.com/invite/redhaired4387" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.com/invite/redhaired4387" height="30" width="40" /></a></td>
   </tr>
 </table>
-
 <hr>
 <!-- <h3 align="left">Tech Stack:</h3>
 <table border="1" style="border-collapse: collapse;">
