@@ -1,0 +1,80 @@
+.theme-toggle-btn {
+  position: relative;
+  overflow: visible; /* allow ripple outside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text-primary);
+}
+
+/* The ripple (hover preview) */
+.theme-toggle-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  pointer-events: none;
+
+  background: var(--hover-ripple);
+
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+/* When hovering — ripple expands like theme transition */
+.theme-toggle-btn:hover::after {
+  opacity: 0.35;
+  transform: translate(-50%, -50%) scale(12);
+}
+
+/* When hover ends, ripple collapses */
+.theme-toggle-btn:not(:hover)::after {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.theme-toggle-icon-light,
+.theme-toggle-icon-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
+/* Light & Dark ripple colors */
+:root {
+  --hover-ripple: rgba(0, 0, 0, 0.15);
+}
+
+.dark {
+  --hover-ripple: rgba(255, 255, 255, 0.15);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+  will-change: clip-path;
+}
+

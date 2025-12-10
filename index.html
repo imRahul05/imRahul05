@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Rahul Kumar - Software Engineer</title>
+    <meta name="title" content="Rahul Kumar - Software Engineer" />
+    <meta name="description" content="Software Engineer at Nuvi Technology and SIH 2023 Winner. Specialized in AI development tools and full-stack architectures." />
+    <meta name="keywords" content="Rahul Kumar, Software Engineer, Full Stack Developer, AI, React, TypeScript, Bangalore, Portfolio" />
+    <meta name="author" content="Rahul Kumar" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rahul.dev/" />
+    <meta property="og:title" content="Rahul Kumar - Software Engineer" />
+    <meta property="og:description" content="Software Engineer at Nuvi Technology and SIH 2023 Winner. Specialized in AI development tools and full-stack architectures." />
+    <meta property="og:image" content="https://i.ibb.co/NdrStmqP/rahul-profile.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://rahul.dev/" />
+    <meta property="twitter:title" content="Rahul Kumar - Software Engineer" />
+    <meta property="twitter:description" content="Software Engineer at Nuvi Technology and SIH 2023 Winner. Specialized in AI development tools and full-stack architectures." />
+    <meta property="twitter:image" content="https://i.ibb.co/NdrStmqP/rahul-profile.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/NdrStmqP/rahul-profile.png" />
+
+    <script>
+      (function() {
+        try {
+          const theme = localStorage.getItem('theme');
+          const isDark = theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
