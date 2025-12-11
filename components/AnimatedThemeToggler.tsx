@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, useCallback } from "react"
 import { flushSync } from "react-dom"
 import { Moon, Sun } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
+
 
 import "../AnimatedThemeToggler.css"
 
@@ -42,7 +42,7 @@ export const AnimatedThemeToggler = ({ className }: { className?: string }) => {
     // Start animation from the center of the viewport
     const centerX = window.innerWidth / 2
     const centerY = window.innerHeight / 2
-    
+
     const maxDistance = Math.hypot(
       Math.max(centerX, window.innerWidth - centerX),
       Math.max(centerY, window.innerHeight - centerY)
@@ -71,31 +71,9 @@ export const AnimatedThemeToggler = ({ className }: { className?: string }) => {
       className={`theme-toggle-btn ${className || ""}`}
       type="button"
     >
-      <AnimatePresence mode="wait" initial={false}>
-        {darkMode ? (
-          <motion.span
-            key="sun-icon"
-            initial={{ opacity: 0, scale: 0.55, rotate: 25 }}
-            animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.33 }}
-            className="theme-toggle-icon-light"
-          >
-            <Sun size={18} />
-          </motion.span>
-        ) : (
-          <motion.span
-            key="moon-icon"
-            initial={{ opacity: 0, scale: 0.55, rotate: -25 }}
-            animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.33 }}
-            className="theme-toggle-icon-dark"
-          >
-            <Moon size={18} />
-          </motion.span>
-        )}
-      </AnimatePresence>
+      <span className="icon-wrapper">
+        {darkMode ? <Sun size={18} className="theme-icon" /> : <Moon size={18} className="theme-icon" />}
+      </span>
     </button>
   )
 }

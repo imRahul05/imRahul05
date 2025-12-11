@@ -9,11 +9,12 @@ interface SocialLinkProps {
 }
 
 export const SocialLink: React.FC<SocialLinkProps> = ({ href, icon, label }) => (
-  <a 
-    href={href} 
-    target="_blank" 
+  <a
+    href={href}
+    target="_blank"
     rel="noopener noreferrer"
     className="social-link"
+    aria-label={label}
   >
     <IconWrapper icon={icon} />
     {label}

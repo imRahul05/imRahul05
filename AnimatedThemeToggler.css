@@ -46,12 +46,25 @@
   transform: translate(-50%, -50%) scale(0);
 }
 
-.theme-toggle-icon-light,
-.theme-toggle-icon-dark {
+.icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: inherit;
+}
+
+.theme-icon {
+  animation: icon-pop 0.3s ease-out forwards;
+}
+
+@keyframes icon-pop {
+  0% {
+    transform: scale(0.55) rotate(25deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
 }
 
 /* Light & Dark ripple colors */
