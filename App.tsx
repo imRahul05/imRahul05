@@ -16,7 +16,14 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const scrollY = window.scrollY;
+      // Hysteresis: shrink when > 50, expand when < 30.
+      // Gap prevents flicker at the boundary.
+      if (scrollY > 50) {
+        setIsScrolled(true);
+      } else if (scrollY < 30) {
+        setIsScrolled(false);
+      }
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
