@@ -4,7 +4,7 @@ export const DATA = {
     title: "Software Engineer",
     location: "Bangalore, India",
     bio: "Software Engineer at Nuvi Technology | SIH 2023 Winner | Building an AI-powered automated medical coding & claims workflow.",
-    image: "/rahul-profile.png",
+    image: "/rahul-profile.webp",
     email: "imrahul2516@gmail.com", // Placeholder for UI consistency
     github: "github.com/imRahul05",
     X: "x.com/imrahul165"

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Globe } from 'lucide-react';
-import { FaXTwitter } from "react-icons/fa6";
-import { VscGithubInverted } from "react-icons/vsc";
+import { Mail, Globe, Github, Twitter } from 'lucide-react';
 import { DATA } from './data';
 import { IconWrapper } from './components/IconWrapper';
 import { SectionTitle } from './components/SectionTitle';
@@ -125,8 +123,8 @@ export default function App() {
         <div className="footer-links">
           {/* Note: Email is a placeholder as it wasn't strictly provided, but fits the layout */}
           <SocialLink href={`mailto:${DATA.personal.email}`} icon={Mail} label="Email" />
-          <SocialLink href={`https://${DATA.personal.github}`} icon={VscGithubInverted} label="GitHub" />
-          <SocialLink href={`https://${DATA.personal.X}`} icon={FaXTwitter} label="Twitter" />
+          <SocialLink href={`https://${DATA.personal.github}`} icon={Github} label="GitHub" />
+          <SocialLink href={`https://${DATA.personal.X}`} icon={Twitter} label="Twitter" />
         </div>
         <p className="text-xs text-muted mt-8">
           © {new Date().getFullYear()} {DATA.personal.name}. Built with React, TypeScript, and Plain CSS.
