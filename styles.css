@@ -163,6 +163,41 @@ a {
   }
 }
 
+/* Skeleton Loading */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, 
+      var(--border-light) 25%, 
+      var(--border-color) 50%, 
+      var(--border-light) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 2px; /* Slight rounding but mostly square/rectangular as per image usually */
+}
+
+/* Match profile image dimensions and shape */
+.header-image .skeleton {
+  width: 6rem;
+  height: 6rem;
+  animation: shimmer 1.5s infinite linear;
+}
+
+@media (min-width: 640px) {
+  .header-image .skeleton {
+      width: 8rem;
+      height: 8rem;
+  }
+}
+
 /* Sections */
 .section {
   margin-bottom: 3rem;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {Mail, Globe } from 'lucide-react';
+import { Mail, Globe } from 'lucide-react';
 import { FaXTwitter } from "react-icons/fa6";
 import { VscGithubInverted } from "react-icons/vsc";
 import { DATA } from './data';
@@ -12,6 +12,7 @@ import { AnimatedThemeToggler } from './components/AnimatedThemeToggler';
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +24,7 @@ export default function App() {
 
   return (
     <div className="container">
-      
+
       {/* HEADER */}
       <header className={`header sticky-header ${isScrolled ? 'is-scrolled' : ''}`}>
         <div className="header-content">
@@ -38,10 +39,13 @@ export default function App() {
         </div>
 
         <div className="header-image">
-          <img 
-            src={DATA.personal.image} 
+          {!isImageLoaded && <div className="skeleton profile-img"></div>}
+          <img
+            src={DATA.personal.image}
             alt={DATA.personal.name}
-            className="profile-img" 
+            className={`profile-img ${!isImageLoaded ? 'hidden' : ''}`}
+            onLoad={() => setIsImageLoaded(true)}
+            style={!isImageLoaded ? { display: 'none' } : {}}
           />
         </div>
       </header>
@@ -55,13 +59,13 @@ export default function App() {
 
       {/* SKILLS (Badges Style) */}
       <section className="section">
-          <div className="skills-list">
-              {DATA.skills.map((skill) => (
-                   <span key={skill} className="skill-badge">
-                      {skill}
-                   </span>
-              ))}
-          </div>
+        <div className="skills-list">
+          {DATA.skills.map((skill) => (
+            <span key={skill} className="skill-badge">
+              {skill}
+            </span>
+          ))}
+        </div>
       </section>
 
       {/* EXPERIENCE */}
@@ -69,7 +73,7 @@ export default function App() {
         <SectionTitle>Experience</SectionTitle>
         <div className="section-content">
           {DATA.experience.map((job, index) => (
-            <EntryItem 
+            <EntryItem
               key={index}
               title={job.company}
               subtitle={job.role}
@@ -85,7 +89,7 @@ export default function App() {
         <SectionTitle>Education</SectionTitle>
         <div className="section-content">
           {DATA.education.map((edu, index) => (
-            <EntryItem 
+            <EntryItem
               key={index}
               title={edu.institution}
               subtitle={edu.degree}
@@ -101,7 +105,7 @@ export default function App() {
         <SectionTitle>Projects</SectionTitle>
         <div className="section-content">
           {DATA.projects.map((project, index) => (
-            <ProjectItem 
+            <ProjectItem
               key={index}
               {...project}
             />
