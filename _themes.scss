@@ -1,0 +1,49 @@
+// Default (Lilac)
+$lilac: (
+    bg-color: #fdfbff,
+    // Soft lilac white
+    text-primary: #1a1523,
+    // Deep violet-black
+    text-secondary: #5e4b8b,
+    // Muted purple
+    text-muted: #8f7ab8,
+    // Soft lavender grey
+
+    border-color: #d7c9ff,
+    // Light lavender
+    border-light: #eee8ff,
+    // Very soft lavender
+
+    accent-color: #9b5cff,
+    // Neon purple accent
+
+    hover-ripple: rgba(155, 92, 255, 0.20) // Neon ripple
+);
+
+
+// Dark (Default Dark)
+$dark: (
+    bg-color: #101014,
+    text-primary: #fafaf9,
+    text-secondary: #d6d3d1,
+    text-muted: #a8a29e,
+    border-color: #44403c,
+    border-light: #292524,
+    accent-color: #fafaf9,
+    hover-ripple: rgba(255, 255, 255, 0.15)
+);
+
+@mixin apply-theme($theme) {
+    @each $key, $value in $theme {
+        --#{$key}: #{$value};
+    }
+}
+
+:root {
+    @include apply-theme($lilac); // Default
+}
+
+[data-theme="dark"] {
+    @include apply-theme($dark);
+}
+

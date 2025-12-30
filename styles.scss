@@ -1,0 +1,425 @@
+@use "themes";
+
+:root {
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+}
+
+/* Layout */
+.container {
+    max-width: 42rem;
+    /* approx max-w-2xl */
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    min-height: 100vh;
+}
+
+/* Typography Utilities */
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+/* Header */
+.header {
+    display: flex;
+    /* Always use row layout to prevent layout shift from flex-direction change */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    margin-bottom: 2rem;
+    /* Always have the border to prevent layout shift - just make it transparent */
+    border-bottom: 1px solid transparent;
+    /* Only transition specific animatable properties */
+    transition: gap 0.3s ease, padding 0.3s ease, border-color 0.3s ease, align-items 0.3s ease;
+
+    &.is-scrolled {
+        align-items: center;
+        gap: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        /* Only change the color, not adding a new border */
+        border-bottom-color: var(--border-light);
+
+        .header-content {
+            h1 {
+                font-size: 1.1rem;
+                margin-bottom: 0.1rem;
+            }
+
+            p {
+                margin-bottom: 0.1rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        .header-meta {
+            margin-bottom: 0;
+            font-size: 0.75rem;
+        }
+
+        .profile-img {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+
+    /* Mobile: use the original stacked -> compact behavior */
+    @media (max-width: 639px) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+
+        &.is-scrolled {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: var(--bg-color);
+    /* Ensure content doesn't show through */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: -1rem;
+    /* Offset padding to maintain flow */
+    transition: padding 0.3s ease, background-color 0.3s ease;
+
+    /* Add a subtle backdrop blur for a modern feel */
+    @supports (backdrop-filter: blur(10px)) {
+        background-color: color-mix(in srgb, var(--bg-color), transparent 10%);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
+
+.header-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.025em;
+    transition: font-size 0.3s ease, margin-bottom 0.3s ease;
+}
+
+.header-content p {
+    transition: font-size 0.3s ease, margin-bottom 0.3s ease;
+}
+
+.header-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 1.5rem;
+    transition: font-size 0.3s ease, margin-bottom 0.3s ease;
+}
+
+@keyframes aura-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header-image {
+    position: relative;
+    display: inline-grid;
+    place-items: center;
+    flex-shrink: 0;
+    border-radius: 9999px;
+}
+
+/* Animated aura ring around the profile image (no layout shift). */
+.header-image::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: inherit;
+    background: conic-gradient(from 0deg,
+            var(--accent-color),
+            var(--text-muted),
+            var(--border-color),
+            var(--accent-color));
+    animation: aura-spin 4s linear infinite;
+    /* Show only the ring, not a filled disk */
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 0);
+    mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 0);
+    pointer-events: none;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 10px var(--hover-ripple));
+}
+
+.header-image>.profile-img {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border: 1px solid var(--text-primary);
+    border-radius: 9999px;
+    flex-shrink: 0;
+    transition: width 0.3s ease, height 0.3s ease;
+
+    [data-theme="dark"] &,
+    [data-theme="midnight"] &,
+    [data-theme="forest"] &,
+    [data-theme="sunset"] &,
+    [data-theme="coffee"] &,
+    [data-theme="cyber"] & {
+        filter: grayscale(100%);
+    }
+
+    @media (min-width: 640px) {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+/* Skeleton Loading */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.skeleton {
+    background: linear-gradient(90deg,
+            var(--border-light) 25%,
+            var(--border-color) 50%,
+            var(--border-light) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 2px;
+    /* Slight rounding but mostly square/rectangular as per image usually */
+}
+
+/* Match profile image dimensions and shape within header */
+.header-image .skeleton {
+    width: 6rem;
+    height: 6rem;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 9999px;
+
+    @media (min-width: 640px) {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+/* Sections */
+.section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.25rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+/* Entries (Experience, Projects) */
+.entry {
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &-header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.25rem;
+
+        @media (min-width: 640px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+    }
+
+    &-role {
+        font-weight: 500;
+        color: var(--text-secondary);
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Projects */
+.project-link {
+    display: block;
+
+    &:hover .entry-title {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+        color: var(--text-primary);
+    }
+
+    &:hover .project-title-row .entry-title {
+        text-decoration-color: var(--text-primary);
+    }
+}
+
+.project-title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+
+    .entry-title {
+        text-decoration: underline;
+        text-decoration-color: var(--border-color);
+        text-underline-offset: 4px;
+        transition: text-decoration-color 0.2s;
+    }
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.skill-badge {
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.125rem 0.375rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+
+    .tech-item {
+        &::before {
+            content: "[";
+        }
+
+        &::after {
+            content: "]";
+        }
+    }
+}
+
+/* Footer */
+.footer {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-light);
+
+    &-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        @media (min-width: 640px) {
+            gap: 2rem;
+        }
+    }
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+
+    &:hover {
+        color: var(--text-primary);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+}
+
+.icon-inline {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+/* Floating Dock */
+.floating-dock {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .theme-toggle-btn {
+        background-color: var(--bg-color);
+        border: 1px solid var(--border-color);
+        padding: 0.75rem;
+        border-radius: 9999px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+}

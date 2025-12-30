@@ -4,38 +4,39 @@ import { useEffect, useRef, useState, useCallback } from "react"
 import { flushSync } from "react-dom"
 import { Moon, Sun } from "lucide-react"
 
-
 import "../AnimatedThemeToggler.css"
+
+const THEMES = [
+  { name: "lilac", icon: Sun },
+  { name: "dark", icon: Moon },
+] as const
 
 export const AnimatedThemeToggler = ({ className }: { className?: string }) => {
   const buttonRef = useRef<HTMLButtonElement>(null)
-  const [darkMode, setDarkMode] = useState(() =>
-    typeof window !== "undefined"
-      ? document.documentElement.classList.contains("dark")
-      : false
-  )
+
+  const [currentThemeIndex, setCurrentThemeIndex] = useState(() => {
+    if (typeof window === "undefined") return 0
+    const saved = localStorage.getItem("theme")
+    const index = THEMES.findIndex((t) => t.name === saved)
+    return index >= 0 ? index : 0
+  })
 
   useEffect(() => {
-    const syncTheme = () =>
-      setDarkMode(document.documentElement.classList.contains("dark"))
+    const theme = THEMES[currentThemeIndex].name
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem("theme", theme)
 
-    const observer = new MutationObserver(syncTheme)
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    })
-    return () => observer.disconnect()
-  }, [])
+    // Sync dark class for compatibility if needed (though we mostly use data-theme now)
+    const isDark = theme === 'dark'
+    document.documentElement.classList.toggle("dark", isDark)
+  }, [currentThemeIndex])
 
   const onToggle = useCallback(async () => {
     if (!buttonRef.current) return
 
     await document.startViewTransition(() => {
       flushSync(() => {
-        const toggled = !darkMode
-        setDarkMode(toggled)
-        document.documentElement.classList.toggle("dark", toggled)
-        localStorage.setItem("theme", toggled ? "dark" : "light")
+        setCurrentThemeIndex((prev) => (prev + 1) % THEMES.length)
       })
     }).ready
 
@@ -61,18 +62,20 @@ export const AnimatedThemeToggler = ({ className }: { className?: string }) => {
         pseudoElement: "::view-transition-new(root)",
       }
     )
-  }, [darkMode])
+  }, [])
+
+  const CurrentIcon = THEMES[currentThemeIndex].icon
 
   return (
     <button
       ref={buttonRef}
       onClick={onToggle}
-      aria-label="Switch theme"
+      aria-label={`Switch theme (current: ${THEMES[currentThemeIndex].name})`}
       className={`theme-toggle-btn ${className || ""}`}
       type="button"
     >
       <span className="icon-wrapper">
-        {darkMode ? <Sun size={18} className="theme-icon" /> : <Moon size={18} className="theme-icon" />}
+        <CurrentIcon size={18} className="theme-icon" key={THEMES[currentThemeIndex].name} />
       </span>
     </button>
   )

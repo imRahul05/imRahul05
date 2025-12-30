@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Mail, Globe, Github, Twitter } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
+import { Mail, Globe, Github } from 'lucide-react';
 import { DATA } from './data';
 import { IconWrapper } from './components/IconWrapper';
 import { SectionTitle } from './components/SectionTitle';
@@ -7,24 +7,67 @@ import { EntryItem } from './components/EntryItem';
 import { ProjectItem } from './components/ProjectItem';
 import { SocialLink } from './components/SocialLink';
 import { AnimatedThemeToggler } from './components/AnimatedThemeToggler';
+import { ResumeButton } from './components/ResumeButton';
+import { XIcon } from './components/XIcon';
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
+  const scrollLockRef = useRef(false);
+  const unlockTimerRef = useRef<number | null>(null);
+  const rafRef = useRef<number | null>(null);
+
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      // Hysteresis: shrink when > 50, expand when < 30.
-      // Gap prevents flicker at the boundary.
-      if (scrollY > 50) {
-        setIsScrolled(true);
-      } else if (scrollY < 30) {
-        setIsScrolled(false);
-      }
+    // Wider hysteresis avoids a feedback loop where the header resizing changes
+    // layout enough to nudge scrollY across a tight threshold.
+    //
+    // On mobile browsers, scrollY can fluctuate as the browser UI shows/hides.
+    // To prevent the header from flipping layouts while scrolling down, we only
+    // allow expanding again when we're very close to the top.
+    const getThresholds = () => {
+      const isMobile = window.matchMedia('(max-width: 639px)').matches;
+      return isMobile
+        ? { shrinkAt: 80, expandAt: 10 }
+        : { shrinkAt: 120, expandAt: 60 };
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    const computeAndSet = () => {
+      rafRef.current = null;
+      if (scrollLockRef.current) return;
+
+      const scrollY = window.scrollY;
+      const { shrinkAt, expandAt } = getThresholds();
+      setIsScrolled((prev) => {
+        const next = scrollY > shrinkAt ? true : scrollY < expandAt ? false : prev;
+        if (next === prev) return prev;
+
+        // Prevent a feedback loop where changing header height nudges scrollY
+        // back across the threshold and immediately toggles again.
+        scrollLockRef.current = true;
+        if (unlockTimerRef.current) window.clearTimeout(unlockTimerRef.current);
+        unlockTimerRef.current = window.setTimeout(() => {
+          scrollLockRef.current = false;
+        }, 350);
+
+        return next;
+      });
+    };
+
+    const handleScroll = () => {
+      if (rafRef.current != null) return;
+      rafRef.current = window.requestAnimationFrame(computeAndSet);
+    };
+
+    // Initialize on mount (covers reload at a scrolled position)
+    computeAndSet();
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (unlockTimerRef.current) window.clearTimeout(unlockTimerRef.current);
+      if (rafRef.current != null) window.cancelAnimationFrame(rafRef.current);
+    };
   }, []);
 
   return (
@@ -124,7 +167,7 @@ export default function App() {
           {/* Note: Email is a placeholder as it wasn't strictly provided, but fits the layout */}
           <SocialLink href={`mailto:${DATA.personal.email}`} icon={Mail} label="Email" />
           <SocialLink href={`https://${DATA.personal.github}`} icon={Github} label="GitHub" />
-          <SocialLink href={`https://${DATA.personal.X}`} icon={Twitter} label="Twitter" />
+          <SocialLink href={`https://${DATA.personal.X}`} icon={XIcon} label="X" />
         </div>
         <p className="text-xs text-muted mt-8">
           © {new Date().getFullYear()} {DATA.personal.name}. Built with React, TypeScript, and Plain CSS.
@@ -133,6 +176,7 @@ export default function App() {
 
       <div className="floating-dock">
         <AnimatedThemeToggler />
+        <ResumeButton />
       </div>
 
     </div>

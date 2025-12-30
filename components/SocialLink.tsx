@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { ComponentType } from 'react';
 import { LucideIcon } from 'lucide-react';
 import { IconWrapper } from './IconWrapper';
 
 interface SocialLinkProps {
   href: string;
-  icon: LucideIcon;
+  icon: LucideIcon | ComponentType<{ className?: string }>;
   label: string;
 }
 

@@ -67,15 +67,6 @@
   }
 }
 
-/* Light & Dark ripple colors */
-:root {
-  --hover-ripple: rgba(0, 0, 0, 0.15);
-}
-
-.dark {
-  --hover-ripple: rgba(255, 255, 255, 0.15);
-}
-
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
