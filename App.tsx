@@ -15,6 +15,7 @@ import { XIcon } from './components/XIcon';
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [isVideoReady, setIsVideoReady] = useState(false);
   const [currentPage, setCurrentPage] = useState<'home' | 'projects'>('home');
 
   const scrollLockRef = useRef(false);
@@ -122,7 +123,7 @@ export default function App() {
         </div>
 
         <div className="header-image">
-          <div className={`profile-flip-container ${isImageLoaded ? 'flip-animation' : ''}`}>
+          <div className={`profile-flip-container ${isImageLoaded && isVideoReady ? 'flip-animation' : ''}`}>
             {/* Front Side - Profile Image */}
             <div className="profile-flip-face profile-flip-front">
               {!isImageLoaded && <div className="skeleton profile-img"></div>}
@@ -143,6 +144,8 @@ export default function App() {
                 muted
                 loop
                 playsInline
+                preload="auto"
+                onCanPlayThrough={() => setIsVideoReady(true)}
               />
             </div>
           </div>
