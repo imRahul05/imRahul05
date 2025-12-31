@@ -107,6 +107,16 @@ a {
             width: 3.5rem;
             height: 3.5rem;
         }
+
+        .profile-flip-container {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+
+        .profile-video {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
     }
 
     /* Mobile: use the original stacked -> compact behavior */
@@ -324,6 +334,7 @@ a {
     transform-style: preserve-3d;
     perspective: 1000px;
     z-index: 1;
+    transition: width 0.3s ease, height 0.3s ease;
 
     @media (min-width: 640px) {
         width: 8rem;
@@ -354,6 +365,7 @@ a {
     object-fit: cover;
     border-radius: 9999px;
     border: 1px solid var(--text-primary);
+    transition: width 0.3s ease, height 0.3s ease;
 }
 
 /* Coin-Flip Animation for Profile */
