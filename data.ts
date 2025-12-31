@@ -8,6 +8,7 @@ export const DATA = {
     email: "imrahul2516@gmail.com", // Placeholder for UI consistency
     github: "github.com/imRahul05",
     X: "x.com/imrahul165",
+    linkedin: "linkedin.com/in/imrahul05",
     resume: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:dac855c6-b1f7-4c61-8457-78ab550f19d0"
   },
   skills: [

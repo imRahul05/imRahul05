@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { Mail, Globe, Github, ArrowRight } from 'lucide-react';
+import { Mail, Globe, Github, ArrowRight, Linkedin } from 'lucide-react';
 import { DATA } from './data';
 import { IconWrapper } from './components/IconWrapper';
 import { SectionTitle } from './components/SectionTitle';
@@ -162,6 +162,7 @@ export default function App() {
           {/* Note: Email is a placeholder as it wasn't strictly provided, but fits the layout */}
           <SocialLink href={`mailto:${DATA.personal.email}`} icon={Mail} label="Email" />
           <SocialLink href={`https://${DATA.personal.github}`} icon={Github} label="GitHub" />
+          <SocialLink href={`https://${DATA.personal.linkedin}`} icon={Linkedin} label="LinkedIn" />
           <SocialLink href={`https://${DATA.personal.X}`} icon={XIcon} label="X" />
         </div>
         <p className="text-xs text-muted mt-8">
