@@ -10,6 +10,7 @@ interface EducationItemProps {
     period: string;
     description: string;
     image?: string;
+    tags?: string[];
 }
 
 const EducationItem: React.FC<EducationItemProps> = ({
@@ -17,7 +18,8 @@ const EducationItem: React.FC<EducationItemProps> = ({
     degree,
     period,
     description,
-    image
+    image,
+    tags
 }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
@@ -67,9 +69,18 @@ const EducationItem: React.FC<EducationItemProps> = ({
                     <span className="education-period">{period}</span>
                 </div>
                 {isOpen && (
-                    <p className="education-description">
-                        <TypewriterText text={description} speed={5} />
-                    </p>
+                    <div className="education-details">
+                        <p className="education-description">
+                            <TypewriterText text={description} speed={5} />
+                        </p>
+                        {tags && tags.length > 0 && (
+                            <div className="education-tags">
+                                {tags.map((tag, index) => (
+                                    <span key={index} className="education-tag">{tag}</span>
+                                ))}
+                            </div>
+                        )}
+                    </div>
                 )}
             </div>
         </div>
@@ -89,6 +100,7 @@ export const Education: React.FC = () => {
                         period={edu.period}
                         description={edu.description}
                         image={edu.image}
+                        tags={edu.tags}
                     />
                 ))}
             </div>

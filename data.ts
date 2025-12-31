@@ -9,7 +9,12 @@ export const DATA = {
     github: "github.com/imRahul05",
     X: "x.com/imrahul165",
     linkedin: "linkedin.com/in/imrahul05",
-    resume: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:dac855c6-b1f7-4c61-8457-78ab550f19d0"
+    resume: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:dac855c6-b1f7-4c61-8457-78ab550f19d0",
+    currentlyBuilding: {
+      name: "Arthion AI",
+      url: "https://arthionai.app/",
+      previewImage: "https://res.cloudinary.com/dw8r5ivmx/image/upload/v1767183858/Screenshot_2025-12-31_at_5.54.11_PM_wmhsv3.png"
+    }
   },
   skills: [
     "React.js", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "Node.js",
@@ -21,7 +26,8 @@ export const DATA = {
       degree: "Master of Computer Applications (MCA)",
       period: "2022 — 2024",
       description: "Focus on Software Engineering and AI. Winner of Smart India Hackathon (SIH) 2023.",
-      image: "https://prourls.link/4WvuxR"
+      image: "https://prourls.link/4WvuxR",
+      tags: ["Computer Application", "Software Development", "Algorithms", "Data Structures", "OOPs", "DB"]
     }
   ],
   experience: [

@@ -98,6 +98,27 @@ export default function App() {
             <IconWrapper icon={Globe} />
             {DATA.personal.location}
           </div>
+          <div className="building-status text-xs">
+            <span className="building-dot" />
+            <span>Building{' '}
+              <span className="arthion-wrapper">
+                <a
+                  href={DATA.personal.currentlyBuilding.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="arthion-brand"
+                >
+                  {DATA.personal.currentlyBuilding.name}
+                </a>
+                <span className="arthion-preview">
+                  <img
+                    src={DATA.personal.currentlyBuilding.previewImage}
+                    alt={DATA.personal.currentlyBuilding.name}
+                  />
+                </span>
+              </span>
+            </span>
+          </div>
         </div>
 
         <div className="header-image">
