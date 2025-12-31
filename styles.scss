@@ -489,6 +489,10 @@ a {
     .project-card:hover & {
         transform: scale(1.02);
     }
+
+    [data-theme="dark"] & {
+        filter: grayscale(100%);
+    }
 }
 
 .project-card-play-btn {
@@ -768,6 +772,11 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: filter 0.3s ease;
+
+    [data-theme="dark"] & {
+        filter: grayscale(100%);
+    }
 }
 
 .education-content {
@@ -852,6 +861,11 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: filter 0.3s ease;
+
+    [data-theme="dark"] & {
+        filter: grayscale(100%);
+    }
 }
 
 .experience-content {

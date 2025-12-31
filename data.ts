@@ -60,7 +60,7 @@ export const DATA = {
       tech: ["MERN", "MongoDB", "Express", "React", "Node.js"],
       link: "https://mansarovar-public-school-green.vercel.app/",
       sourceUrl: "https://github.com/imRahul05",
-      image: "https://prourls.link/CO2mWM",
+      image: "https://res.cloudinary.com/dw8r5ivmx/image/upload/v1767173536/Screenshot_2025-12-31_at_3.02.07_PM_syjpih.png",
       video: "https://prourls.link/MnBUVO"
     },
     {
