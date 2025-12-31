@@ -30,6 +30,8 @@ const EducationItem: React.FC<EducationItemProps> = ({
             className="education-item"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            onClick={() => setIsOpen(!isOpen)}
+            style={{ cursor: 'pointer' }}
         >
             {image && (
                 <div className="education-icon">

@@ -5,6 +5,7 @@ export const DATA = {
     location: "Bangalore, India",
     bio: "Software Engineer at Nuvi Technology | SIH 2023 Winner | Building an AI-powered automated medical coding & claims workflow.",
     image: "/rahul-profile.webp",
+    profileVideo: "https://res.cloudinary.com/divkfbddw/video/upload/v1767192966/convert_to_3d_i2hi0n.mp4",
     email: "imrahul2516@gmail.com", // Placeholder for UI consistency
     github: "github.com/imRahul05",
     X: "x.com/imrahul165",
@@ -26,7 +27,7 @@ export const DATA = {
       degree: "Master of Computer Applications (MCA)",
       period: "2022 — 2024",
       description: "Focus on Software Engineering and AI. Winner of Smart India Hackathon (SIH) 2023.",
-      image: "https://prourls.link/4WvuxR",
+      image: "https://upload.wikimedia.org/wikipedia/en/a/a0/Visvesvaraya_Technological_University_logo.png",
       tags: ["Computer Application", "Software Development", "Algorithms", "Data Structures", "OOPs", "DB"]
     }
   ],

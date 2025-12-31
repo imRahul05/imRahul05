@@ -316,6 +316,77 @@ a {
     }
 }
 
+/* Coin-Flip Animation for Profile */
+.profile-flip-container {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    z-index: 1;
+
+    @media (min-width: 640px) {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+.profile-flip-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.profile-flip-front {
+    z-index: 2;
+}
+
+.profile-flip-back {
+    transform: rotateY(180deg);
+}
+
+.profile-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9999px;
+    border: 1px solid var(--text-primary);
+}
+
+/* Coin-Flip Animation for Profile */
+/* Coin-flip keyframes - flip to video, stay, flip back to image */
+@keyframes coinFlip {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    /* First flip - show video (~0.7s) */
+    10% {
+        transform: rotateY(180deg);
+    }
+
+    /* Keep video visible for ~5 seconds */
+    85% {
+        transform: rotateY(180deg);
+    }
+
+    /* Flip back to image (~0.7s) */
+    95% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.profile-flip-container.flip-animation {
+    animation: coinFlip 7s ease-in-out forwards;
+}
+
 /* Skeleton Loading */
 @keyframes shimmer {
     0% {

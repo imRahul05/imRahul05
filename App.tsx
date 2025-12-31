@@ -122,14 +122,30 @@ export default function App() {
         </div>
 
         <div className="header-image">
-          {!isImageLoaded && <div className="skeleton profile-img"></div>}
-          <img
-            src={DATA.personal.image}
-            alt={DATA.personal.name}
-            className={`profile-img ${!isImageLoaded ? 'hidden' : ''}`}
-            onLoad={() => setIsImageLoaded(true)}
-            style={!isImageLoaded ? { display: 'none' } : {}}
-          />
+          <div className={`profile-flip-container ${isImageLoaded ? 'flip-animation' : ''}`}>
+            {/* Front Side - Profile Image */}
+            <div className="profile-flip-face profile-flip-front">
+              {!isImageLoaded && <div className="skeleton profile-img"></div>}
+              <img
+                src={DATA.personal.image}
+                alt={DATA.personal.name}
+                className={`profile-img ${!isImageLoaded ? 'hidden' : ''}`}
+                onLoad={() => setIsImageLoaded(true)}
+                style={!isImageLoaded ? { display: 'none' } : {}}
+              />
+            </div>
+            {/* Back Side - Video */}
+            <div className="profile-flip-face profile-flip-back">
+              <video
+                className="profile-video"
+                src={DATA.personal.profileVideo}
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            </div>
+          </div>
         </div>
       </header>
 

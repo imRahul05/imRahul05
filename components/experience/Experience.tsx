@@ -28,6 +28,8 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             className="experience-item"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            onClick={() => setIsOpen(!isOpen)}
+            style={{ cursor: 'pointer' }}
         >
             {image && (
                 <div className="experience-icon">
