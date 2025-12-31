@@ -1,30 +1,37 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Mail, Globe, Github } from 'lucide-react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { Mail, Globe, Github, ArrowRight } from 'lucide-react';
 import { DATA } from './data';
 import { IconWrapper } from './components/IconWrapper';
 import { SectionTitle } from './components/SectionTitle';
-import { EntryItem } from './components/EntryItem';
-import { ProjectItem } from './components/ProjectItem';
+import { ProjectCard } from './components/project/ProjectCard';
+import { ProjectsPage } from './components/project/ProjectsPage';
+import { Education } from './components/education/Education';
+import { Experience } from './components/experience/Experience';
 import { SocialLink } from './components/SocialLink';
-import { AnimatedThemeToggler } from './components/AnimatedThemeToggler';
-import { ResumeButton } from './components/ResumeButton';
+import { AnimatedThemeToggler } from './components/floatbuttons/AnimatedThemeToggler';
+import { ResumeButton } from './components/floatbuttons/ResumeButton';
 import { XIcon } from './components/XIcon';
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [currentPage, setCurrentPage] = useState<'home' | 'projects'>('home');
 
   const scrollLockRef = useRef(false);
+
+  const handleViewAllProjects = useCallback(() => {
+    setCurrentPage('projects');
+    window.scrollTo(0, 0);
+  }, []);
+
+  const handleBackToHome = useCallback(() => {
+    setCurrentPage('home');
+    window.scrollTo(0, 0);
+  }, []);
   const unlockTimerRef = useRef<number | null>(null);
   const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
-    // Wider hysteresis avoids a feedback loop where the header resizing changes
-    // layout enough to nudge scrollY across a tight threshold.
-    //
-    // On mobile browsers, scrollY can fluctuate as the browser UI shows/hides.
-    // To prevent the header from flipping layouts while scrolling down, we only
-    // allow expanding again when we're very close to the top.
     const getThresholds = () => {
       const isMobile = window.matchMedia('(max-width: 639px)').matches;
       return isMobile
@@ -69,6 +76,13 @@ export default function App() {
       if (rafRef.current != null) window.cancelAnimationFrame(rafRef.current);
     };
   }, []);
+
+  // Get featured projects (first 2 with images)
+  const featuredProjects = DATA.projects.filter(p => p.image).slice(0, 2);
+
+  if (currentPage === 'projects') {
+    return <ProjectsPage onBack={handleBackToHome} />;
+  }
 
   return (
     <div className="container">
@@ -117,48 +131,29 @@ export default function App() {
       </section>
 
       {/* EXPERIENCE */}
-      <section className="section">
-        <SectionTitle>Experience</SectionTitle>
-        <div className="section-content">
-          {DATA.experience.map((job, index) => (
-            <EntryItem
-              key={index}
-              title={job.company}
-              subtitle={job.role}
-              meta={job.period}
-              description={job.description}
-            />
-          ))}
-        </div>
-      </section>
+      <Experience />
 
       {/* EDUCATION */}
-      <section className="section">
-        <SectionTitle>Education</SectionTitle>
-        <div className="section-content">
-          {DATA.education.map((edu, index) => (
-            <EntryItem
-              key={index}
-              title={edu.institution}
-              subtitle={edu.degree}
-              meta={edu.period}
-              description={edu.description}
-            />
-          ))}
-        </div>
-      </section>
+      <Education />
 
-      {/* PROJECTS */}
+      {/* FEATURED PROJECTS */}
       <section className="section">
-        <SectionTitle>Projects</SectionTitle>
-        <div className="section-content">
-          {DATA.projects.map((project, index) => (
-            <ProjectItem
+        <SectionTitle>Featured Projects</SectionTitle>
+        <div className="featured-projects-grid">
+          {featuredProjects.map((project, index) => (
+            <ProjectCard
               key={index}
               {...project}
             />
           ))}
         </div>
+        <button
+          className="view-all-projects-btn"
+          onClick={handleViewAllProjects}
+        >
+          View All Projects
+          <ArrowRight size={16} />
+        </button>
       </section>
 
       {/* FOOTER */}

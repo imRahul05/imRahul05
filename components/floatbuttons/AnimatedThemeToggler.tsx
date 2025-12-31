@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, useCallback } from "react"
 import { flushSync } from "react-dom"
 import { Moon, Sun } from "lucide-react"
 
-import "../AnimatedThemeToggler.css"
+import "../styles/AnimatedThemeToggler.css"
 
 const THEMES = [
   { name: "lilac", icon: Sun },

@@ -1,7 +1,7 @@
 import { FileText } from "lucide-react";
-import { DATA } from "../data";
+import { DATA } from "../../data";
 
-import "../AnimatedThemeToggler.css";
+import "../styles/AnimatedThemeToggler.css";
 
 export const ResumeButton = ({ className }: { className?: string }) => {
     const handleClick = () => {

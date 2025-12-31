@@ -19,58 +19,76 @@ export const DATA = {
       institution: "Visvesvaraya Technological University",
       degree: "Master of Computer Applications (MCA)",
       period: "2022 — 2024",
-      description: "Focus on Software Engineering and AI. Winner of Smart India Hackathon (SIH) 2023."
+      description: "Focus on Software Engineering and AI. Winner of Smart India Hackathon (SIH) 2023.",
+      image: "https://prourls.link/4WvuxR"
     }
   ],
   experience: [
     {
       company: "Nuvi Technology",
       role: "Full Stack Developer",
-      period: "sep 2025-present",
-      description: "Working as a Full Stack Developer, focusing on building scalable web applications and integrating AI solutions to enhance user experience."
+      period: "Sep 2024 - Present",
+      description: "Working as a Full Stack Developer, focusing on building scalable web applications and integrating AI solutions to enhance user experience.",
+      image: "https://prourls.link/INrfUP"
     },
     {
       company: "Freelance / Personal Projects",
       role: "Software Engineer",
       period: "2024 — Present",
-      description: "Developing production-grade full-stack applications. Built diverse tools ranging from AI-assisted dev environments to dynamic streaming platforms. Integrating modern APIs including OpenAI and TMDB."
+      description: "Developing production-grade full-stack applications. Built diverse tools ranging from AI-assisted dev environments to dynamic streaming platforms. Integrating modern APIs including OpenAI and TMDB.",
+      image: "https://prourls.link/g3Oc92"
     }
   ],
   projects: [
     {
       name: "FinSage AI",
+      period: "November 2024 - December 2024",
       description:
         "A better way to manage your finances. Take control of your financial journey with our comprehensive suite of tools.",
       tech: ["React", "Web", "JS", "FireBase"],
-      link: "https://finsage-ai.vercel.app/"
+      link: "https://finsage-ai.vercel.app/",
+      sourceUrl: "https://github.com/imRahul05",
+      image: "https://res.cloudinary.com/dw8r5ivmx/image/upload/v1767173443/Screenshot_2025-12-31_at_3.00.33_PM_jfpils.png",
+      video: "https://res.cloudinary.com/divkfbddw/video/upload/v1756879926/Screen_Recording_2025-09-03_at_11.40.15_AM_qxxhxn.mov"
     },
     {
       name: "School Management System",
+      period: "October 2024 - November 2024",
       description:
-        "A comprehensive school management system and website designed to serve various stakeholders including students, parents, teachers, and administrators. The application includes both public-facing pages and authenticated portals for different user types.",
-      tech: ["MERN"],
-      link: "https://mansarovar-public-school-green.vercel.app/"
+        "A comprehensive school management system and website designed to serve various stakeholders including students, parents, teachers, and administrators.",
+      tech: ["MERN", "MongoDB", "Express", "React", "Node.js"],
+      link: "https://mansarovar-public-school-green.vercel.app/",
+      sourceUrl: "https://github.com/imRahul05",
+      image: "https://prourls.link/CO2mWM",
+      video: "https://prourls.link/MnBUVO"
     },
     {
       name: "PillPal AI",
+      period: "September 2024 - October 2024",
       description:
         "PillPal helps you manage medications, track doses, and stay on top of refills with smart reminders and a simple tracking system.",
       tech: ["React", "Web", "JS", "FireBase"],
-      link: "https://pill-pal-ai.vercel.app/"
+      link: "https://pill-pal-ai.vercel.app/",
+      sourceUrl: "https://github.com/imRahul05",
+      video: "https://res.cloudinary.com/divkfbddw/video/upload/v1756879926/Screen_Recording_2025-09-03_at_11.40.15_AM_qxxhxn.mov"
     },
     {
       name: "Billing and Management App",
+      period: "August 2024 - September 2024",
       description:
         "A web app for managing billing and invoicing with role-based authentication. Users can create, view, and manage invoices.",
-      tech: ["MERN", "Tailwind", "session-based", "JWT"],
-      link: "https://arjun-swarnkar-jewel.vercel.app/login"
+      tech: ["MERN", "Tailwind", "JWT"],
+      link: "https://arjun-swarnkar-jewel.vercel.app/login",
+      sourceUrl: "https://github.com/imRahul05"
     },
     {
       name: "OMS - Order Management System",
+      period: "July 2024 - August 2024",
       description:
         "A web app for managing orders with role-based authentication. Users can place orders, staff/admins can manage them via dashboards.",
       tech: ["MERN", "Vite", "Tailwind", "JWT"],
-      link: "https://order-management-system-inky-alpha.vercel.app/"
+      link: "https://order-management-system-inky-alpha.vercel.app/",
+      sourceUrl: "https://github.com/imRahul05"
     }
 
   ]
