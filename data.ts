@@ -2,7 +2,7 @@ export const DATA = {
   personal: {
     name: "Rahul Kumar",
     title: "Software Engineer",
-    location: "Bangalore, India",
+    location: "Bangalore, Bharat",
     bio: "Software Engineer at Nuvi Technology | SIH 2023 Winner | Building an AI-powered automated medical coding & claims workflow.",
     image: "/rahul-profile.webp",
     profileVideo: "https://res.cloudinary.com/divkfbddw/video/upload/v1767192966/convert_to_3d_i2hi0n.mp4",
@@ -37,14 +37,14 @@ export const DATA = {
       role: "Full Stack Developer",
       period: "Sep 2024 - Present",
       description: "Working as a Full Stack Developer, focusing on building scalable web applications and integrating AI solutions to enhance user experience.",
-      image: "https://prourls.link/INrfUP"
+      image: "https://nuviltech.vercel.app/logo11.png"
     },
     {
       company: "Freelance / Personal Projects",
       role: "Software Engineer",
       period: "2024 — Present",
       description: "Developing production-grade full-stack applications. Built diverse tools ranging from AI-assisted dev environments to dynamic streaming platforms. Integrating modern APIs including OpenAI and TMDB.",
-      image: "https://prourls.link/g3Oc92"
+      image: "https://cdn.papershift.com/20220808070712/freelancing-work-and-its-statutory-laws-and-regulations-in-the-UK-explained-by-Papershift-min-910x500.jpeg"
     }
   ],
   projects: [

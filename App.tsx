@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { Mail, Globe, Github, ArrowRight, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Github, ArrowRight, Linkedin } from 'lucide-react';
 import { DATA } from './data';
 import { IconWrapper } from './components/IconWrapper';
 import { SectionTitle } from './components/SectionTitle';
@@ -95,7 +95,7 @@ export default function App() {
             {DATA.personal.title}
           </p>
           <div className="header-meta text-xs text-muted">
-            <IconWrapper icon={Globe} />
+            <MapPin size={14} style={{ color: '#3b82f6' }} />
             {DATA.personal.location}
           </div>
           <div className="building-status text-xs">
