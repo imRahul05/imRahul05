@@ -8,6 +8,7 @@ import { ProjectsPage } from './components/project/ProjectsPage';
 import { Education } from './components/education/Education';
 import { Experience } from './components/experience/Experience';
 import { SocialLink } from './components/SocialLink';
+import { DigitalClock } from './components/DigitalClock';
 import { AnimatedThemeToggler } from './components/floatbuttons/AnimatedThemeToggler';
 import { ResumeButton } from './components/floatbuttons/ResumeButton';
 import { XIcon } from './components/XIcon';
@@ -204,6 +205,7 @@ export default function App() {
           <SocialLink href={`https://${DATA.personal.github}`} icon={Github} label="GitHub" />
           <SocialLink href={`https://${DATA.personal.linkedin}`} icon={Linkedin} label="LinkedIn" />
           <SocialLink href={`https://${DATA.personal.X}`} icon={XIcon} label="X" />
+          <DigitalClock />
         </div>
         <p className="text-xs text-muted mt-8">
           © {new Date().getFullYear()} {DATA.personal.name}. Built with React, TypeScript, and Plain CSS.
