@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Mail, MapPin, Github, ArrowRight, Linkedin } from 'lucide-react';
 import { DATA } from './data';
-import { IconWrapper } from './components/IconWrapper';
 import { SectionTitle } from './components/SectionTitle';
 import { ProjectCard } from './components/project/ProjectCard';
 import { ProjectsPage } from './components/project/ProjectsPage';
