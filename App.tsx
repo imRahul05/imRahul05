@@ -86,9 +86,11 @@ export default function App() {
   }
 
   return (
-    <div className="container">
+    <>
+    
+      <div className="container">
 
-      {/* HEADER */}
+        {/* HEADER */}
       <header className={`header sticky-header ${isScrolled ? 'is-scrolled' : ''}`}>
         <div className="header-content">
           <h1>{DATA.personal.name}</h1>
@@ -216,6 +218,7 @@ export default function App() {
         <ResumeButton />
       </div>
 
-    </div>
+      </div>
+    </>
   );
 }
