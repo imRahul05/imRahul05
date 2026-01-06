@@ -106,6 +106,13 @@ export const DATA = {
       link:"https://communitycarev4.web.app"
     },
     {
+      name:"EarthLink Traders",
+      description:"It an e-commerce website for a trading company built using React for the frontend and Node.js with Express for the backend. The application features a user-friendly interface.",
+      tag:"Currently used by client",
+      tech:["React","TS","Tailwind CSS","Node.js","Express","MongoDB"],
+      link:"https://earthlinktraders.com"
+    },
+    {
       name: "SnapDigest",
       description:
         "SnapDigest is an adaptive news reader application that personalizes content based on user location and network conditions. Built with React and Vite, the application delivers relevant news content while optimizing for various network speeds.",
