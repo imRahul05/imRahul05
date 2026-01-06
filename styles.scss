@@ -1021,6 +1021,31 @@ a {
     gap: 1.5rem;
 }
 
+.projects-divider {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 0.25rem 0;
+}
+
+.projects-section-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 0.25rem;
+}
+
+.project-tag {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+}
+
 /* Education Section */
 .education-item {
     display: flex;

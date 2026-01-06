@@ -20,15 +20,69 @@ export default function App() {
 
   const scrollLockRef = useRef(false);
 
-  const handleViewAllProjects = useCallback(() => {
-    setCurrentPage('projects');
-    window.scrollTo(0, 0);
+  const getHashParams = useCallback(() => {
+    const raw = window.location.hash.startsWith('#')
+      ? window.location.hash.slice(1)
+      : window.location.hash;
+    return new URLSearchParams(raw);
   }, []);
 
+  const getPageFromLocation = useCallback((): 'home' | 'projects' => {
+    // Preferred format: #tab=project&filter=...
+    const hashParams = getHashParams();
+    if (hashParams.get('tab') === 'project') return 'projects';
+
+    // Backward-compatible formats (will be normalized into the hash)
+    const searchParams = new URLSearchParams(window.location.search);
+    if (searchParams.get('tab') === 'project') return 'projects';
+    if (searchParams.has('projects')) return 'projects';
+
+    return 'home';
+  }, [getHashParams]);
+
+  const pushUrlForPage = useCallback((page: 'home' | 'projects') => {
+    const { pathname } = window.location;
+    if (page === 'projects') {
+      // Keep this format intentionally for future filter support.
+      window.history.pushState({ page }, '', `${pathname}#tab=project&filter=all`);
+      return;
+    }
+
+    // Home: clear query/hash to keep a clean root URL.
+    window.history.pushState({ page }, '', `${pathname}`);
+  }, []);
+
+  const normalizeProjectsUrl = useCallback(() => {
+    const hashParams = getHashParams();
+    const searchParams = new URLSearchParams(window.location.search);
+
+    const isProjects =
+      hashParams.get('tab') === 'project' ||
+      searchParams.get('tab') === 'project' ||
+      searchParams.has('projects');
+
+    if (!isProjects) return;
+
+    // Canonical: store routing state in the hash.
+    const next = new URLSearchParams(hashParams);
+    next.set('tab', 'project');
+    if (!next.has('filter')) next.set('filter', searchParams.get('filter') ?? 'all');
+
+    const { pathname } = window.location;
+    window.history.replaceState({ page: 'projects' }, '', `${pathname}#${next.toString()}`);
+  }, [getHashParams]);
+
+  const handleViewAllProjects = useCallback(() => {
+    pushUrlForPage('projects');
+    setCurrentPage('projects');
+    window.scrollTo(0, 0);
+  }, [pushUrlForPage]);
+
   const handleBackToHome = useCallback(() => {
+    pushUrlForPage('home');
     setCurrentPage('home');
     window.scrollTo(0, 0);
-  }, []);
+  }, [pushUrlForPage]);
   const unlockTimerRef = useRef<number | null>(null);
   const rafRef = useRef<number | null>(null);
 
@@ -77,6 +131,25 @@ export default function App() {
       if (rafRef.current != null) window.cancelAnimationFrame(rafRef.current);
     };
   }, []);
+
+  useEffect(() => {
+    // Initialize page from URL and keep it in sync with browser back/forward.
+    setCurrentPage(getPageFromLocation());
+    normalizeProjectsUrl();
+
+    const handleLocationChange = () => {
+      const nextPage = getPageFromLocation();
+      setCurrentPage(nextPage);
+      if (nextPage === 'projects') normalizeProjectsUrl();
+    };
+
+    window.addEventListener('popstate', handleLocationChange);
+    window.addEventListener('hashchange', handleLocationChange);
+    return () => {
+      window.removeEventListener('popstate', handleLocationChange);
+      window.removeEventListener('hashchange', handleLocationChange);
+    };
+  }, [getPageFromLocation, normalizeProjectsUrl]);
 
   // Get featured projects (first 2 with images)
   const featuredProjects = DATA.projects.filter(p => p.image).slice(0, 2);

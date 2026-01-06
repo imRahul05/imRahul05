@@ -1,3 +1,5 @@
+import { Tag } from "lucide-react";
+
 export const DATA = {
   personal: {
     name: "Rahul Kumar",
@@ -75,7 +77,7 @@ export const DATA = {
       period: "September 2024 - October 2024",
       description:
         "PillPal helps you manage medications, track doses, and stay on top of refills with smart reminders and a simple tracking system.",
-      tech: ["React", "Web", "JS", "FireBase"],
+      tech: ["React", "Web", "JS"],
       link: "https://pill-pal-ai.vercel.app/",
       sourceUrl: "https://github.com/imRahul05",
       video: "https://res.cloudinary.com/divkfbddw/video/upload/v1756879926/Screen_Recording_2025-09-03_at_11.40.15_AM_qxxhxn.mov"
@@ -86,8 +88,36 @@ export const DATA = {
       description:
         "A web app for managing billing and invoicing with role-based authentication. Users can create, view, and manage invoices.",
       tech: ["MERN", "Tailwind", "JWT"],
-      link: "https://arjun-swarnkar-jewel.vercel.app/login",
+      tag: "Currently used by client",
       sourceUrl: "https://github.com/imRahul05"
+    },
+    {
+      name: "Movie Stream",
+      description:"Built with react and tailwind css, this is a movie streaming web application that allows users to browse, search, and watch movies from a vast collection. It features a sleek and user-friendly interface, making it easy for users to find their favorite films using TMDB Apis and enjoy a seamless streaming experience.",
+      tech: ["React", "Tailwind CSS", "TMDB API","VidSrc API"],
+      link: "https://sidemo.vercel.app"
+    },
+    {
+      name: "Community Care",
+      description:
+        "Community Care is a platform that connects volunteers with local community service opportunities. Built with React and Vite, it allows users to find, join, and manage volunteer activities in their area.",
+      tag:" Built this in Smart India Hackathon 2023",
+      tech: ["Flutter", "Dart","Firebase","Android"],
+      link:"https://communitycarev4.web.app"
+    },
+    {
+      name: "SnapDigest",
+      description:
+        "SnapDigest is an adaptive news reader application that personalizes content based on user location and network conditions. Built with React and Vite, the application delivers relevant news content while optimizing for various network speeds.",
+      tech: ["React", "Vite"],
+      link: "https://snap-digest.vercel.app/"
+    },
+    {
+      name: "TypeFast - Competitive Typing Speed Game",
+      description:
+        "A modern, feature-rich typing speed test application built with React, Node.js, and MongoDB. Challenge yourself, compete with friends, and improve your typing skills with real-time feedback and performance tracking.",
+      tech: ["React", "Node.js", "MongoDB"],
+      link: "https://battle-type.vercel.app/"
     },
     {
       name: "OMS - Order Management System",
@@ -97,6 +127,20 @@ export const DATA = {
       tech: ["MERN", "Vite", "Tailwind", "JWT"],
       link: "https://order-management-system-inky-alpha.vercel.app/",
       sourceUrl: "https://github.com/imRahul05"
+    },
+    {
+      name: "Algo-Blockchain",
+      description:
+        "I built this project to explore how Algorand transactions work end-to-end using a modern web stack. It connects a React + Vite frontend with an Express + MongoDB backend to send and track Algorand TestNet transactions in real time. The goal was to understand blockchain integration, transaction lifecycle, and persistence in a practical, hands-on way.",
+      tech: ["React", "Vite", "Express", "MongoDB", "Algorand", "Blockchain"],
+      link: "https://algorand-task.vercel.app/"
+    },
+    {
+      name: "Candidate Referral Management System (CRMS)",
+      description:
+        "A comprehensive web application for managing employee referrals built with React and Vite. This system allows employees to submit candidate referrals and tracks these referrals through the hiring pipeline.",
+      tech: ["React", "Vite"],
+      link: "https://crms-dash.vercel.app/"
     }
 
   ]

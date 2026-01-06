@@ -6,10 +6,11 @@ interface ProjectCardProps {
     period?: string;
     description: string;
     tech: string[];
-    link: string;
+    link?: string;
     sourceUrl?: string;
     image?: string;
     video?: string;
+    tag?: string;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -20,7 +21,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     link,
     sourceUrl,
     image,
-    video
+    video,
+    tag
 }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -90,6 +92,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 {/* Content Section */}
                 <div className="project-card-content">
                     <h3 className="project-card-title">{name}</h3>
+                    {tag && <p className="project-card-period">{tag}</p>}
                     {period && <p className="project-card-period">{period}</p>}
                     <p className="project-card-description">{description}</p>
 
@@ -102,15 +105,17 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
                     {/* Action Buttons */}
                     <div className="project-card-actions">
-                        <a
-                            href={link}
-                            className="project-card-btn"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Globe size={14} />
-                            Website
-                        </a>
+                        {link && (
+                            <a
+                                href={link}
+                                className="project-card-btn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Globe size={14} />
+                                Website
+                            </a>
+                        )}
                         {sourceUrl && (
                             <a
                                 href={sourceUrl}

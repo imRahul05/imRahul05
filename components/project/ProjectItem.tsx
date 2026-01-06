@@ -6,29 +6,54 @@ interface ProjectItemProps {
   name: string;
   description: string;
   tech: string[];
-  link: string;
+  link?: string;
+  tag?: string;
 }
 
-export const ProjectItem: React.FC<ProjectItemProps> = ({ name, description, tech, link }) => {
+export const ProjectItem: React.FC<ProjectItemProps> = ({ name, description, tech, link, tag }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+
+  const toggleOpen = () => setIsOpen((v) => !v);
 
   return (
     <div
       className="entry"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={toggleOpen}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleOpen();
+        }
+      }}
+      role="button"
+      tabIndex={0}
+      style={{ cursor: 'pointer' }}
     >
       <div className="project-title-row mb-1" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <a
-          href={link}
-          className="entry-title font-bold text-sm"
-          style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: isHovered ? 'var(--text-primary)' : 'var(--border-color)', textUnderlineOffset: '4px', transition: 'text-decoration-color 0.2s' }}
-        >
-          {name}
-        </a>
+        {link ? (
+          <a
+            href={link}
+            className="entry-title font-bold text-sm"
+            style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: isHovered ? 'var(--text-primary)' : 'var(--border-color)', textUnderlineOffset: '4px', transition: 'text-decoration-color 0.2s' }}
+            onClick={(e) => e.stopPropagation()}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {name}
+          </a>
+        ) : (
+          <span className="entry-title font-bold text-sm">{name}</span>
+        )}
+
+        {tag && <span className="project-tag">{tag}</span>}
         <button
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleOpen();
+          }}
           style={{
             background: 'none',
             border: 'none',
