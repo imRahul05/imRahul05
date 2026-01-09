@@ -12,7 +12,7 @@ export const DATA = {
     github: "github.com/imRahul05",
     X: "x.com/imrahul165",
     linkedin: "linkedin.com/in/imrahul05",
-    resume: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:dac855c6-b1f7-4c61-8457-78ab550f19d0",
+    resume: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:8fb68d34-0a6e-4b15-a024-be2200708a87",
     currentlyBuilding: {
       name: "Arthion AI",
       url: "https://arthionai.app/",
@@ -93,24 +93,24 @@ export const DATA = {
     },
     {
       name: "Movie Stream",
-      description:"Built with react and tailwind css, this is a movie streaming web application that allows users to browse, search, and watch movies from a vast collection. It features a sleek and user-friendly interface, making it easy for users to find their favorite films using TMDB Apis and enjoy a seamless streaming experience.",
-      tech: ["React", "Tailwind CSS", "TMDB API","VidSrc API"],
+      description: "Built with react and tailwind css, this is a movie streaming web application that allows users to browse, search, and watch movies from a vast collection. It features a sleek and user-friendly interface, making it easy for users to find their favorite films using TMDB Apis and enjoy a seamless streaming experience.",
+      tech: ["React", "Tailwind CSS", "TMDB API", "VidSrc API"],
       link: "https://sidemo.vercel.app"
     },
     {
       name: "Community Care",
       description:
         "Community Care is a platform that connects volunteers with local community service opportunities. Built with React and Vite, it allows users to find, join, and manage volunteer activities in their area.",
-      tag:" Built this in Smart India Hackathon 2023",
-      tech: ["Flutter", "Dart","Firebase","Android"],
-      link:"https://communitycarev4.web.app"
+      tag: " Built this in Smart India Hackathon 2023",
+      tech: ["Flutter", "Dart", "Firebase", "Android"],
+      link: "https://communitycarev4.web.app"
     },
     {
-      name:"EarthLink Traders",
-      description:"It an e-commerce website for a trading company built using React for the frontend and Node.js with Express for the backend. The application features a user-friendly interface.",
-      tag:"Currently used by client",
-      tech:["React","TS","Tailwind CSS","Node.js","Express","MongoDB"],
-      link:"https://earthlinktraders.com"
+      name: "EarthLink Traders",
+      description: "It an e-commerce website for a trading company built using React for the frontend and Node.js with Express for the backend. The application features a user-friendly interface.",
+      tag: "Currently used by client",
+      tech: ["React", "TS", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+      link: "https://earthlinktraders.com"
     },
     {
       name: "SnapDigest",
