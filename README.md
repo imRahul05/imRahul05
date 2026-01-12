@@ -16,7 +16,7 @@
         <li>Diving deeper into: <strong>AI , JavaScript, React.js, Node.js, Express.js & Postgress</strong></li>
         <li>Ask me about:<strong>C, HTML, CSS, JavaScript</strong></li>
         <li>Let’s Connect: <strong> rahulkumar20000516@gmail.com</strong></li>
-        <li>📄 Resume:  <a href="https://heyrahul05.vercel.app/Rahul_Kumar_Resume.pdf">View Here</a></li>
+        <li>📄 Resume:  <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:8fb68d34-0a6e-4b15-a024-be2200708a87">View Here</a></li>
       </ul>
     </td>
     <td> 
