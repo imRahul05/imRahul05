@@ -49,8 +49,6 @@ export const DigitalClock: React.FC = () => {
                 <span className="clock-segment clock-minutes">{time.minutes}</span>
                 <span className="clock-separator">:</span>
                 <span className="clock-segment clock-seconds">{time.seconds}</span>
-                <span className="clock-separator clock-ms-sep">.</span>
-                <span className="clock-segment clock-milliseconds">{time.milliseconds}</span>
             </div>
             <span className="clock-label">IST</span>
         </div>

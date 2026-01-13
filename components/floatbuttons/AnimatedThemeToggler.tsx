@@ -71,9 +71,10 @@ export const AnimatedThemeToggler = ({ className }: { className?: string }) => {
       ref={buttonRef}
       onClick={onToggle}
       aria-label={`Switch theme (current: ${THEMES[currentThemeIndex].name})`}
-      className={`theme-toggle-btn ${className || ""}`}
+      className={`theme-toggle-btn floating-btn-with-tooltip ${className || ""}`}
       type="button"
     >
+      <span className="floating-btn-tooltip">Theme</span>
       <span className="icon-wrapper">
         <CurrentIcon size={18} className="theme-icon" key={THEMES[currentThemeIndex].name} />
       </span>

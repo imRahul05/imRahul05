@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DATA } from '../../data';
+import { DATA } from '../../data/data';
 import { SectionTitle } from '../SectionTitle';
 import { TypewriterText } from '../TypewriterText';
 import { ChevronDown } from 'lucide-react';
