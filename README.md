@@ -13,7 +13,7 @@
     <td>
       <ul>
         <li>Completed  MCA at VTU (Visvesvaraya Technological University)</li>
-        <li>Diving deeper into: <strong>AI , JavaScript, React.js, Node.js, Express.js & Postgress</strong></li>
+        <li>Diving deeper into: <strong>AI , JavaScript, React.js, Next.js Node.js, Express.js & Postgress</strong></li>
         <li>Ask me about:<strong>C, HTML, CSS, JavaScript</strong></li>
         <li>Let’s Connect: <strong> rahulkumar20000516@gmail.com</strong></li>
         <li>📄 Resume:  <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:8fb68d34-0a6e-4b15-a024-be2200708a87">View Here</a></li>
