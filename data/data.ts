@@ -51,6 +51,16 @@ export const DATA = {
   ],
   projects: [
     {
+      name: "MarkDown Previewer",
+      period: "February 2026 - Present",
+      description: "AA markdown editor with live preview and instant sharing.",
+      tech: ["React", "Web", "JS"],
+      link: "https://markdownpreciew.vercel.app",
+      sourceUrl: "",
+      image: "",
+      video: ""
+    },
+    {
       name: "FinSage AI",
       period: "November 2024 - December 2024",
       description:

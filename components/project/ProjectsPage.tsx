@@ -16,11 +16,12 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onBack }) => {
     }, [onBack]);
 
     const pinnedTopOrder = [
-        'Billing and Management App',
+        'MarkDown Previewer',
         'FinSage AI',
         'School Management System',
         'PillPal AI',
         'Movie Stream',
+        'Billing and Management App',
         'Community Care',
     ] as const;
 
@@ -82,7 +83,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onBack }) => {
                         />
                     ))}
 
-                   
+
 
                     {remainingProjects.map((project, index) => (
                         <ProjectItem
