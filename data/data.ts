@@ -37,7 +37,7 @@ export const DATA = {
     {
       company: "Nuvi Technology",
       role: "Full Stack Developer",
-      period: "Sep 2024 - Present",
+      period: "Sep 2025 - Present",
       description: "Working as a Full Stack Developer, focusing on building scalable web applications and integrating AI solutions to enhance user experience.",
       image: "https://nuviltech.vercel.app/logo11.png"
     },
