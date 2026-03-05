@@ -1,44 +1,47 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&reverse=true" width="100%"/>
 </div>
-
+<!-- 
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&pause=1000&color=9742F7&background=BEFF7600&center=true&vCenter=true&width=500&lines=Namaskāra++i+am+Rahul......;Frontend+Web+and+App+developer;Smart+India+Hackathon+Winner+2023;Software+Engineer" alt="Typing SVG" />
-  </a>
-</div>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Mono+Code&weight=500&size=20&duration=2000&pause=300&color=7aa2f7&center=true&vCenter=true&width=600&lines=>_Initializing+workspace...;>_Namaskāra,+I+am+Rahul;>_Software+Engineer+%7C;>_Loading+Hackathon+Trophy...;>_Status:+Online+%26+Coding" alt="Typing SVG" />
+</p>
+</div> -->
 
 <div align="center">
   <a href="https://github.com/imrahul05">
     <img src="https://komarev.com/ghpvc/?username=imrahul05&label=Profile%20Views&color=0e75b6&style=for-the-badge&logo=github" alt="Views"/>
   </a>
-  <a href="https://codetime.dev">
-    <img alt="CodeTime Badge" src="https://shields.jannchie.com/endpoint?style=for-the-badge&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fv3%2Fusers%2Fshield%3Fuid%3D30555">
-  </a>
+
+
+# Rahul Kumar
+
+**Software Engineer • Frontend Systems • AI Curious**
+
+Namaskāra 👋
+
+Me, a developer who enjoys building **interfaces that feel fast, thoughtful, and human**.
+My work sits at the intersection of **frontend engineering, product thinking, and emerging AI tools**.
+
+🏆 **Smart India Hackathon 2023 Winner**
+
 </div>
 
-<br />
-
-<table align="center" style="width: 100%; border-collapse: collapse;">
-  <tr>
-    <td width="60%" style="border: none; vertical-align: top;">
-      <h2>About Me</h2>
-      <ul>
-        <li>Completed  MCA at VTU (Visvesvaraya Technological University)</li>
-        <li>Diving deeper into: <strong>AI , JavaScript, React.js, Next.js Node.js, Express.js & Postgress</strong></li>
-        <li>Ask me about:<strong>C, HTML, CSS, JavaScript</strong></li>
-        <li>Let’s Connect: <strong> rahulkumar20000516@gmail.com</strong></li>
-        <li>📄 Resume:  <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:8fb68d34-0a6e-4b15-a024-be2200708a87">View Here</a></li>
-      </ul>
-    </td>
-    <td width="40%" align="center" style="border: none;">
-      <img src="https://media1.tenor.com/m/xFUGScgp7V8AAAAC/computer-code.gif" alt="Coding GIF" width="90%" style="border-radius: 12px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);"/>
-    </td>
-  </tr>
-</table>
-
 ---
+<div align="center">
 
+## Current Focus
+
+Right now I'm going deeper into:
+
+ **React & Next.js architecture**
+ **AI-powered applications**
+ **Backend systems with Node.js**
+ **Performance and developer experience**
+
+</div>
+
+-----
 <h2 align="center">Tech Stack & Tools</h2>
 
 <p align="center">
