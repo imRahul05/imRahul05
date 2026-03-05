@@ -14,8 +14,6 @@
   </a>
 
 
-# Rahul Kumar
-
 **Software Engineer • Frontend Systems • AI Curious**
 
 Namaskāra 👋
