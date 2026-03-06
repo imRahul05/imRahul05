@@ -1,8 +1,4 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0a0f1e,50:0e75b6,100:00d4ff&height=220&section=header&fontSize=42&fontColor=ffffff&animation=twinkling&text=Frontend%20Engineer%20%26%20Builder&fontAlignY=55&desc=%E2%9C%A6%20Crafting%20fast%2C%20thoughtful%2C%20human-centered%20interfaces%20%E2%9C%A6&descSize=14&descAlignY=75&descColor=a8d8f0" width="100%"/>
-</div>
 
-<br/>
 
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=2800&pause=900&color=00D4FF&center=true&vCenter=true&width=620&lines=Namask%C4%81ra+%F0%9F%99%8F+Welcome+to+my+profile;%F0%9F%8F%86+Smart+India+Hackathon+2023+Winner;%E2%9A%A1+React+%7C+Next.js+%7C+Node.js+%7C+AI;%F0%9F%94%A5+Building+at+the+edge+of+frontend+%26+AI;%F0%9F%9A%80+Always+learning%2C+always+shipping" alt="Typing SVG" />
