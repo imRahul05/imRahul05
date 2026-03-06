@@ -59,7 +59,7 @@ I care deeply about the details — the kind of polish that makes an interface f
 
 <h4 align="center">Backend & Data</h4>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,mysql,firebase&theme=dark&perline=5" />
+  <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,mongodb,mysql,firebase&theme=dark&perline=6" />
 </p>
 
 <h4 align="center">Tooling & Platforms</h4>
