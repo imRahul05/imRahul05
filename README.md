@@ -101,7 +101,7 @@ I care deeply about the details — the kind of polish that makes an interface f
 <div align="center">
   <img src="https://leetcard.jacoblin.cool/imRahul05?theme=dark&font=Anybody&ext=activity&border=0&radius=10" alt="LeetCode Stats" width="48%"/>
   &nbsp;
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imrahul05&theme=github_dark&utcOffset=5.5" alt="Productive Time" width="47%"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imrahul05&theme=github_dark&utcOffset=5.5" alt="Productive Time" width="47%"/>
 </div>
 
 <br/>
