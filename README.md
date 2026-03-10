@@ -59,7 +59,7 @@ I care deeply about the details — the kind of polish that makes an interface f
 
 <h4 align="center">Frontend</h4>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,tailwind,bootstrap,redux&theme=dark&perline=7" />
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,redux&theme=dark&perline=7" />
 </p>
 
 <h4 align="center">Backend & Data</h4>
@@ -69,7 +69,7 @@ I care deeply about the details — the kind of polish that makes an interface f
 
 <h4 align="center">Tooling & Platforms</h4>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,nginx,docker,netlify,flutter,java&theme=dark&perline=7" />
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,nginx,docker,netlify,flutter,java&theme=dark&perline=9" />
 </p>
 
 ---
