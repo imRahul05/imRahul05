@@ -249,5 +249,72 @@ Receiving GitHub notifications on WhatsApp turned out to be a simple but effecti
         readTime: "4 min read",
         tags: ["Automation", "GitHub", "DevTools"],
         image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80"
+    },
+    {
+        slug: "blocking-script-injection-with-csp",
+        title: "Blocking Script Injection with Content Security Policy",
+        excerpt: "A quick look at how Content Security Policy (CSP) prevents malicious scripts from executing in web apps.",
+        content: `
+# Blocking Script Injection with Content Security Policy
+
+While working on a security task, I wondered:
+
+**What actually prevents a malicious script from running if it gets injected into a web app?**
+
+The answer is **Content Security Policy (CSP)**.
+
+CSP is a browser security feature that allows scripts to run **only from trusted sources**.
+
+## Without CSP
+
+If an attacker injects a script, the browser may execute it.
+
+\`\`\`mermaid
+flowchart LR
+    Attacker --> InjectedScript
+    InjectedScript --> Browser
+    Browser --> App
+\`\`\`
+
+## With CSP
+
+With CSP enabled, the browser checks whether the script source is allowed.
+
+\`\`\`mermaid
+flowchart LR
+    Attacker --> InjectedScript
+    InjectedScript --> Browser
+    Browser --> CSPPolicy
+    CSPPolicy -->|Blocked| Script
+\`\`\`
+
+If the script is not from a trusted source, the browser **refuses to execute it**.
+
+## Example CSP Header
+
+\`\`\`ts
+export const headers = {
+  "Content-Security-Policy": "script-src 'self'"
+}
+\`\`\`
+
+This means:
+
+- Only scripts from the **same domain** are allowed
+- Injected scripts from external sources are **blocked**
+
+## Why It Matters
+
+CSP adds an extra layer of protection against **XSS (Cross-Site Scripting)** attacks.
+
+Even if a script somehow gets injected into the page, the browser will **not run it unless it matches the policy**.
+
+Sometimes security improvements are not complex —  
+they're just about **configuring the browser correctly**.
+`,
+        date: "2026-03-10",
+        readTime: "2 min read",
+        tags: ["Security", "Next.js", "Web Security"],
+        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80"
     }
 ];
