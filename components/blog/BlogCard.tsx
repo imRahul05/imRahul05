@@ -23,6 +23,8 @@ export const BlogCard: React.FC<BlogCardProps> = ({ blog, onReadMore }) => {
   return (
     <article
       className="blog-card"
+      onClick={() => onReadMore(blog.slug)}
+      style={{ cursor: 'pointer' }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

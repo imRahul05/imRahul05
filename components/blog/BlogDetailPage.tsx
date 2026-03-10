@@ -4,6 +4,7 @@ import { BLOGS, Blog } from '../../data/blogs';
 import { AnimatedThemeToggler } from '../floatbuttons/AnimatedThemeToggler';
 import { HomeButton } from '../floatbuttons/HomeButton';
 import { ResumeButton } from '../floatbuttons/ResumeButton';
+import { MermaidDiagram } from "./MermaidDiagram";
 
 interface BlogDetailPageProps {
   slug: string;
@@ -43,13 +44,21 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
           codeBlockLanguage = line.slice(3).trim();
           codeBlockContent = [];
         } else {
-          elements.push(
-            <pre key={`code-${index}`} className="blog-code-block">
-              <code className={`language-${codeBlockLanguage}`}>
-                {codeBlockContent.join('\n')}
-              </code>
-            </pre>
-          );
+          const code = codeBlockContent.join('\n');
+
+          if (codeBlockLanguage === "mermaid") {
+            elements.push(
+              <MermaidDiagram key={`mermaid-${index}`} chart={code} />
+            );
+          } else {
+            elements.push(
+              <pre key={`code-${index}`} className="blog-code-block">
+                <code className={`language-${codeBlockLanguage}`}>
+                  {code}
+                </code>
+              </pre>
+            );
+          }
           inCodeBlock = false;
           codeBlockContent = [];
           codeBlockLanguage = '';
@@ -187,7 +196,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
 
         <div className="blog-article-header">
           <h1 className="blog-article-title">{blog.title}</h1>
-          
+
           <div className="blog-article-meta">
             <span className="blog-article-meta-item">
               <Calendar size={14} />

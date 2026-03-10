@@ -1655,5 +1655,17 @@ a {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mermaid-diagram {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.mermaid-diagram svg {
+    max-width: 100%;
 }

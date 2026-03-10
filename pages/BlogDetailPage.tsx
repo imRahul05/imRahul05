@@ -5,6 +5,7 @@ import { BLOGS } from '../data/blogs';
 import { AnimatedThemeToggler } from '../components/floatbuttons/AnimatedThemeToggler';
 import { HomeButton } from '../components/floatbuttons/HomeButton';
 import { ResumeButton } from '../components/floatbuttons/ResumeButton';
+import { MermaidDiagram } from '../components/blog/MermaidDiagram';
 
 export const BlogDetailPage: React.FC = () => {
   const navigate = useNavigate();
@@ -50,13 +51,20 @@ export const BlogDetailPage: React.FC = () => {
           codeBlockLanguage = line.slice(3).trim();
           codeBlockContent = [];
         } else {
-          elements.push(
-            <pre key={`code-${index}`} className="blog-code-block">
-              <code className={`language-${codeBlockLanguage}`}>
-                {codeBlockContent.join('\n')}
-              </code>
-            </pre>
-          );
+          const code = codeBlockContent.join('\n');
+          if (codeBlockLanguage === 'mermaid') {
+            elements.push(
+              <MermaidDiagram key={`mermaid-${index}`} chart={code} />
+            );
+          } else {
+            elements.push(
+              <pre key={`code-${index}`} className="blog-code-block">
+                <code className={`language-${codeBlockLanguage}`}>
+                  {code}
+                </code>
+              </pre>
+            );
+          }
           inCodeBlock = false;
           codeBlockContent = [];
           codeBlockLanguage = '';
