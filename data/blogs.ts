@@ -239,11 +239,41 @@ The implementation is quite simple:
 
 The backend simply listens for GitHub events and forwards them to WhatsApp.
 
+## Turning It Into an npm Package
+
+After using this setup for a while, I realized the idea could be useful for other developers too.
+
+Instead of requiring everyone to manually build the webhook server, I turned the project into a small **npm scaffolding package** that generates a ready-to-run GitHub → WhatsApp notifier.
+
+Now you can create your own bot in seconds.
+
+### Quick Start
+
+\`\`\`bash
+npx create-github-whatsapp-notifier my-bot
+cd my-bot
+npm install
+cp .env.example .env
+npm start
+\`\`\`
+
+After generating the project, you only need to:
+
+1. Add your **Twilio credentials** in \`.env\`
+2. Map **GitHub usernames to WhatsApp numbers**
+3. Add the **GitHub webhook URL**
+
+That's it — the bot will start sending repository updates directly to WhatsApp.
+
+You can check the package here:
+
+[create-github-whatsapp-notifier on npm](https://www.npmjs.com/package/create-github-whatsapp-notifier)
 
 ## Final Thoughts
 
-
 Receiving GitHub notifications on WhatsApp turned out to be a simple but effective way to keep track of PR activity without constantly switching tools.
+
+What started as a small personal automation eventually turned into a reusable tool that anyone can set up in seconds.
 `,
         date: "2026-03-10",
         readTime: "4 min read",

@@ -1581,8 +1581,16 @@ a {
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
-    margin-left: 1.5rem;
     line-height: 1.6;
+}
+
+.blog-list {
+    margin: 0 0 1rem 1.5rem;
+    padding-left: 0.25rem;
+}
+
+.blog-list-ordered {
+    list-style-type: decimal;
 }
 
 .blog-inline-code {
@@ -1592,6 +1600,16 @@ a {
     padding: 0.125rem 0.375rem;
     border-radius: 0.25rem;
     color: var(--text-primary);
+}
+
+.blog-inline-link {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+        color: var(--text-secondary);
+    }
 }
 
 .blog-code-block {

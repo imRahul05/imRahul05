@@ -35,6 +35,28 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
     let inCodeBlock = false;
     let codeBlockContent: string[] = [];
     let codeBlockLanguage = '';
+    let unorderedListItems: React.ReactNode[] = [];
+    let orderedListItems: React.ReactNode[] = [];
+
+    const flushLists = () => {
+      if (unorderedListItems.length > 0) {
+        elements.push(
+          <ul key={`ul-${elements.length}`} className="blog-list">
+            {unorderedListItems}
+          </ul>
+        );
+        unorderedListItems = [];
+      }
+
+      if (orderedListItems.length > 0) {
+        elements.push(
+          <ol key={`ol-${elements.length}`} className="blog-list blog-list-ordered">
+            {orderedListItems}
+          </ol>
+        );
+        orderedListItems = [];
+      }
+    };
 
     lines.forEach((line, index) => {
       // Code block start/end
@@ -73,11 +95,13 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
 
       // Skip empty lines
       if (line.trim() === '') {
+        flushLists();
         return;
       }
 
       // H1
       if (line.startsWith('# ')) {
+        flushLists();
         elements.push(
           <h1 key={index} className="blog-content-h1">
             {line.slice(2)}
@@ -88,6 +112,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
 
       // H2
       if (line.startsWith('## ')) {
+        flushLists();
         elements.push(
           <h2 key={index} className="blog-content-h2">
             {line.slice(3)}
@@ -98,6 +123,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
 
       // H3
       if (line.startsWith('### ')) {
+        flushLists();
         elements.push(
           <h3 key={index} className="blog-content-h3">
             {line.slice(4)}
@@ -108,45 +134,95 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
 
       // List items
       if (line.startsWith('- ')) {
-        elements.push(
+        orderedListItems = [];
+        unorderedListItems.push(
           <li key={index} className="blog-list-item">
-            {renderInlineCode(line.slice(2))}
+            {renderInlineContent(line.slice(2))}
+          </li>
+        );
+        return;
+      }
+
+      // Numbered list items
+      const orderedMatch = line.match(/^\d+\.\s+(.*)$/);
+      if (orderedMatch) {
+        unorderedListItems = [];
+        orderedListItems.push(
+          <li key={index} className="blog-list-item">
+            {renderInlineContent(orderedMatch[1])}
           </li>
         );
         return;
       }
 
       // Regular paragraph
+      flushLists();
       elements.push(
         <p key={index} className="blog-content-p">
-          {renderInlineCode(line)}
+          {renderInlineContent(line)}
         </p>
       );
     });
 
+    flushLists();
     return elements;
   };
 
-  // Render inline code with backticks
-  const renderInlineCode = (text: string): React.ReactNode => {
-    const parts = text.split(/(`[^`]+`)/g);
-    return parts.map((part, i) => {
-      if (part.startsWith('`') && part.endsWith('`')) {
-        return (
-          <code key={i} className="blog-inline-code">
-            {part.slice(1, -1)}
+  // Render inline markdown: code, links, and bold text
+  const renderInlineContent = (text: string): React.ReactNode[] => {
+    const nodes: React.ReactNode[] = [];
+    const tokenRegex = /(`[^`]+`|\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*)/g;
+    let lastIndex = 0;
+    let match: RegExpExecArray | null;
+
+    while ((match = tokenRegex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        nodes.push(text.slice(lastIndex, match.index));
+      }
+
+      const token = match[0];
+      if (token.startsWith('`') && token.endsWith('`')) {
+        nodes.push(
+          <code key={`${match.index}-code`} className="blog-inline-code">
+            {token.slice(1, -1)}
           </code>
         );
-      }
-      // Handle bold text
-      const boldParts = part.split(/(\*\*[^*]+\*\*)/g);
-      return boldParts.map((boldPart, j) => {
-        if (boldPart.startsWith('**') && boldPart.endsWith('**')) {
-          return <strong key={`${i}-${j}`}>{boldPart.slice(2, -2)}</strong>;
+      } else if (token.startsWith('[')) {
+        const linkMatch = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (linkMatch) {
+          const [, label, href] = linkMatch;
+          nodes.push(
+            <a
+              key={`${match.index}-link`}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="blog-inline-link"
+            >
+              {label}
+            </a>
+          );
+        } else {
+          nodes.push(token);
         }
-        return boldPart;
-      });
-    });
+      } else if (token.startsWith('**') && token.endsWith('**')) {
+        nodes.push(
+          <strong key={`${match.index}-bold`}>
+            {token.slice(2, -2)}
+          </strong>
+        );
+      } else {
+        nodes.push(token);
+      }
+
+      lastIndex = match.index + token.length;
+    }
+
+    if (lastIndex < text.length) {
+      nodes.push(text.slice(lastIndex));
+    }
+
+    return nodes;
   };
 
   if (!blog) {
