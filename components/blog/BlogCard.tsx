@@ -1,32 +1,48 @@
-import React, { useState } from 'react';
-import { Calendar, Clock, ArrowRight } from 'lucide-react';
-import { Blog } from '../../data/blogs';
+import React, { useState } from "react";
+import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { Blog } from "../../data/blogs";
 
 interface BlogCardProps {
   blog: Blog;
   onReadMore: (slug: string) => void;
 }
 
+const formatDate = (dateString: string): string => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+};
+
 export const BlogCard: React.FC<BlogCardProps> = ({ blog, onReadMore }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
 
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric',
-      year: 'numeric'
-    });
+  const handleCardClick = () => {
+    onReadMore(blog.slug);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLElement>) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      onReadMore(blog.slug);
+    }
+  };
+
+  const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
+    onReadMore(blog.slug);
   };
 
   return (
     <article
       className="blog-card"
-      onClick={() => onReadMore(blog.slug)}
-      style={{ cursor: 'pointer' }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onClick={handleCardClick}
+      onKeyDown={handleKeyDown}
+      role="button"
+      tabIndex={0}
+      aria-label={`Read blog post: ${blog.title}`}
     >
       {blog.image && (
         <div className="blog-card-image-wrapper">
@@ -34,13 +50,13 @@ export const BlogCard: React.FC<BlogCardProps> = ({ blog, onReadMore }) => {
           <img
             src={blog.image}
             alt={blog.title}
-            className={`blog-card-image ${!isImageLoaded ? 'hidden' : ''}`}
+            className="blog-card-image"
             onLoad={() => setIsImageLoaded(true)}
-            style={!isImageLoaded ? { display: 'none' } : {}}
+            style={!isImageLoaded ? { display: "none" } : {}}
           />
         </div>
       )}
-      
+
       <div className="blog-card-content">
         <div className="blog-card-meta">
           <span className="blog-card-meta-item">
@@ -52,11 +68,11 @@ export const BlogCard: React.FC<BlogCardProps> = ({ blog, onReadMore }) => {
             {blog.readTime}
           </span>
         </div>
-        
+
         <h3 className="blog-card-title">{blog.title}</h3>
-        
+
         <p className="blog-card-excerpt">{blog.excerpt}</p>
-        
+
         <div className="blog-card-tags">
           {blog.tags.map((tag) => (
             <span key={tag} className="blog-card-tag">
@@ -64,19 +80,14 @@ export const BlogCard: React.FC<BlogCardProps> = ({ blog, onReadMore }) => {
             </span>
           ))}
         </div>
-        
+
         <button
           className="blog-card-read-more"
-          onClick={() => onReadMore(blog.slug)}
+          onClick={handleButtonClick}
+          aria-label={`Read more about ${blog.title}`}
         >
           Read More
-          <ArrowRight 
-            size={14} 
-            style={{ 
-              transform: isHovered ? 'translateX(4px)' : 'translateX(0)',
-              transition: 'transform 0.2s ease'
-            }} 
-          />
+          <ArrowRight size={14} className="blog-card-read-more-arrow" />
         </button>
       </div>
     </article>

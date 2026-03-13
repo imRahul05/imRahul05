@@ -1426,7 +1426,16 @@ a {
         background-color: var(--border-light);
         border-color: var(--text-muted);
         color: var(--text-primary);
+
+        .blog-card-read-more-arrow {
+            transform: translateX(4px);
+        }
     }
+}
+
+.blog-card-read-more-arrow {
+    transition: transform 0.2s ease;
+    transform: translateX(0);
 }
 
 /* Blog Detail Page */
