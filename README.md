@@ -39,7 +39,6 @@ I care deeply about the details — the kind of polish that makes an interface f
 🌐 &nbsp;**Full-stack leaning Frontend**  
 🤖 &nbsp;**AI-integrated app builder**  
 📍 &nbsp;**India**  
-💬 &nbsp;**he / him**  
 🎯 &nbsp;**Open to exciting opportunities**  
 
 </td>
