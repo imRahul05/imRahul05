@@ -159,11 +159,7 @@ I care deeply about the details — the kind of polish that makes an interface f
 
 <br/>
 
-<div align="center">
-  <a href="https://visitcount.itsvg.in">
-    <img src="https://visitcount.itsvg.in/api?id=imRahul05&label=Profile%20Visitors&color=1&icon=5&pretty=true" alt="Visit Count" />
-  </a>
-</div>
+
 
 <br/>
 
