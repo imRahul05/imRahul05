@@ -1,7 +1,7 @@
 
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=2800&pause=900&color=00D4FF&center=true&vCenter=true&width=620&lines=Namask%C4%81ra+%F0%9F%99%8F+Welcome+to+my+profile;%F0%9F%8F%86+Smart+India+Hackathon+2023+Winner;%E2%9A%A1+React+%7C+Next.js+%7C+Node.js+%7C+AI;%F0%9F%94%A5+Building+at+the+edge+of+frontend+%26+AI;%F0%9F%9A%80+Always+learning%2C+always+shipping" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=2800&pause=900&color=00D4FF&center=true&vCenter=true&width=620&lines=Namask%C4%81ra+%F0%9F%99%8F+Welcome+to+my+profile;%F0%9F%8F%86+Smart+India+Hackathon+2023+Winner;%E2%9A%A1+React+%7C+Next.js+%7C+Node.js+%7C+AI;%F0%9F%94%A5+Building+at+the+edge+of+frontend+%26+AGents;%F0%9F%9A%80+Always+learning%2C+always+shipping" alt="Typing SVG" />
 </div>
 
 <br/>
