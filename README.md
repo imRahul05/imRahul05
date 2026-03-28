@@ -46,31 +46,46 @@ I care deeply about the details — the kind of polish that makes an interface f
 </table>
 
 ---
-
 <p align="center"><sub>Technologies I reach for every day</sub></p>
-
 
 <h4 align="center">Languages</h4>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,java,python&theme=dark&perline=7" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.gif" width="60" />
 </p>
-
 
 <h4 align="center">Frontend</h4>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,redux&theme=dark&perline=7" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.gif" width="60" />
 </p>
 
 <h4 align="center">Backend & Data</h4>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,mongodb,mysql,firebase&theme=dark&perline=6" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.gif" width="60" />
 </p>
 
 <h4 align="center">Tooling & Platforms</h4>
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,nginx,docker,netlify,flutter,java&theme=dark&perline=9" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vercel/vercel-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/netlify/netlify-original.gif" width="60" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.gif" width="60" />
 </p>
-
 ---
 
 <h2 align="center">— Where My Head Is At —</h2>
