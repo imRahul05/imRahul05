@@ -46,7 +46,7 @@ I care deeply about the details — the kind of polish that makes an interface f
 </table>
 
 ---
-<p align="center"><sub>Technologies I reach for every day</sub></p> <h4 align="center">Languages</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=ts,js,java,python&theme=dark&perline=7" /> </p> <h4 align="center">Frontend</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,redux&theme=dark&perline=7" /> </p> <h4 align="center">Backend & Data</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,mongodb,mysql,firebase&theme=dark&perline=6" /> </p> <h4 align="center">Tooling & Platforms</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,nginx,docker,netlify,flutter,java&theme=dark&perline=9" /> </p>
+<p align="center"><sub>Technologies I reach for every day</sub></p> <h4 align="center">Languages</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=ts,js,java,python&theme=dark&perline=7" /> </p> <h4 align="center">Frontend</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,redux&theme=dark&perline=7" /> </p> <h4 align="center">Backend & Data</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,mongodb,mysql,firebase&theme=dark&perline=6" /> </p> <h4 align="center">Tooling & Platforms</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,nginx,docker,netlify,flutter&theme=dark&perline=9" /> </p>
 ---
 
 <h2 align="center">— Where My Head Is At —</h2>
