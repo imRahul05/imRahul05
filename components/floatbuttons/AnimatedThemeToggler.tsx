@@ -2,13 +2,32 @@
 
 import { useEffect, useRef, useState, useCallback } from "react"
 import { flushSync } from "react-dom"
-import { Moon, Sun } from "lucide-react"
 
 import "../styles/AnimatedThemeToggler.css"
 
+const MoonIcon = ({ className = "", size = 18 }: { className?: string; size?: number }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+  </svg>
+)
+
+const SunIcon = ({ className = "", size = 18 }: { className?: string; size?: number }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <circle cx="12" cy="12" r="4" />
+    <path d="M12 2v2" />
+    <path d="M12 20v2" />
+    <path d="m4.93 4.93 1.41 1.41" />
+    <path d="m17.66 17.66 1.41 1.41" />
+    <path d="M2 12h2" />
+    <path d="M20 12h2" />
+    <path d="m6.34 17.66-1.41 1.41" />
+    <path d="m19.07 4.93-1.41 1.41" />
+  </svg>
+)
+
 const THEMES = [
-  { name: "lilac", icon: Sun },
-  { name: "dark", icon: Moon },
+  { name: "lilac", icon: SunIcon },
+  { name: "dark", icon: MoonIcon },
 ] as const
 
 export const AnimatedThemeToggler = ({ className }: { className?: string }) => {
@@ -26,7 +45,7 @@ export const AnimatedThemeToggler = ({ className }: { className?: string }) => {
     document.documentElement.setAttribute('data-theme', theme)
     localStorage.setItem("theme", theme)
 
-    // Sync dark class for compatibility if needed (though we mostly use data-theme now)
+    // Sync dark class for compatibility if needed
     const isDark = theme === 'dark'
     document.documentElement.classList.toggle("dark", isDark)
   }, [currentThemeIndex])
@@ -34,35 +53,47 @@ export const AnimatedThemeToggler = ({ className }: { className?: string }) => {
   const onToggle = useCallback(async () => {
     if (!buttonRef.current) return
 
+    const nextIndex = (currentThemeIndex + 1) % THEMES.length
+    const isNextDark = THEMES[nextIndex].name === "dark"
+
     await document.startViewTransition(() => {
       flushSync(() => {
-        setCurrentThemeIndex((prev) => (prev + 1) % THEMES.length)
+        setCurrentThemeIndex(nextIndex)
       })
     }).ready
 
-    // Start animation from the center of the viewport
-    const centerX = window.innerWidth / 2
-    const centerY = window.innerHeight / 2
-
-    const maxDistance = Math.hypot(
-      Math.max(centerX, window.innerWidth - centerX),
-      Math.max(centerY, window.innerHeight - centerY)
-    )
-
-    document.documentElement.animate(
-      {
-        clipPath: [
-          `circle(0px at ${centerX}px ${centerY}px)`,
-          `circle(${maxDistance}px at ${centerX}px ${centerY}px)`,
-        ],
-      },
-      {
-        duration: 400,
-        easing: "ease-out",
-        pseudoElement: "::view-transition-new(root)",
-      }
-    )
-  }, [])
+    if (isNextDark) {
+      // Switching to dark (white to black): top to bottom
+      document.documentElement.animate(
+        {
+          clipPath: [
+            "inset(0 0 100% 0)", // bottom fully covered, reveal downward
+            "inset(0 0 0 0)", // fully revealed
+          ],
+        },
+        {
+          duration: 700,
+          easing: "ease-in-out",
+          pseudoElement: "::view-transition-new(root)",
+        }
+      )
+    } else {
+      // Switching to lilac (black to white): bottom to top
+      document.documentElement.animate(
+        {
+          clipPath: [
+            "inset(100% 0 0 0)", // top fully covered, reveal upward
+            "inset(0 0 0 0)", // fully revealed
+          ],
+        },
+        {
+          duration: 700,
+          easing: "ease-in-out",
+          pseudoElement: "::view-transition-new(root)",
+        }
+      )
+    }
+  }, [currentThemeIndex])
 
   const CurrentIcon = THEMES[currentThemeIndex].icon
 
