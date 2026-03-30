@@ -14,16 +14,14 @@ export const EntryItem: React.FC<EntryItemProps> = ({ title, subtitle, meta, des
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div 
+    <div
       className="entry"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="entry-header">
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <h3 className="font-bold text-sm">
-            {title}
-          </h3>
+          <h3 className="font-bold text-sm">{title}</h3>
           <button
             onClick={() => setIsOpen(!isOpen)}
             style={{
@@ -36,15 +34,15 @@ export const EntryItem: React.FC<EntryItemProps> = ({ title, subtitle, meta, des
               opacity: isHovered || isOpen ? 1 : 0,
               transition: 'opacity 0.2s ease-in-out',
             }}
-            aria-label={isOpen ? "Collapse details" : "Expand details"}
+            aria-label={isOpen ? 'Collapse details' : 'Expand details'}
           >
-            <ChevronDown 
-              size={14} 
+            <ChevronDown
+              size={14}
               className="text-muted"
-              style={{ 
+              style={{
                 transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-                transition: 'transform 0.2s ease-in-out'
-              }} 
+                transition: 'transform 0.2s ease-in-out',
+              }}
             />
           </button>
         </div>

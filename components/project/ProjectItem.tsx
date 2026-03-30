@@ -32,12 +32,21 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ name, description, tec
       tabIndex={0}
       style={{ cursor: 'pointer' }}
     >
-      <div className="project-title-row mb-1" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+      <div
+        className="project-title-row mb-1"
+        style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+      >
         {link ? (
           <a
             href={link}
             className="entry-title font-bold text-sm"
-            style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: isHovered ? 'var(--text-primary)' : 'var(--border-color)', textUnderlineOffset: '4px', transition: 'text-decoration-color 0.2s' }}
+            style={{
+              color: 'inherit',
+              textDecoration: 'underline',
+              textDecorationColor: isHovered ? 'var(--text-primary)' : 'var(--border-color)',
+              textUnderlineOffset: '4px',
+              transition: 'text-decoration-color 0.2s',
+            }}
             onClick={(e) => e.stopPropagation()}
             target="_blank"
             rel="noopener noreferrer"
@@ -64,14 +73,14 @@ export const ProjectItem: React.FC<ProjectItemProps> = ({ name, description, tec
             opacity: isHovered || isOpen ? 1 : 0,
             transition: 'opacity 0.2s ease-in-out',
           }}
-          aria-label={isOpen ? "Collapse details" : "Expand details"}
+          aria-label={isOpen ? 'Collapse details' : 'Expand details'}
         >
           <ChevronDown
             size={14}
             className="text-muted"
             style={{
               transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-              transition: 'transform 0.2s ease-in-out'
+              transition: 'transform 0.2s ease-in-out',
             }}
           />
         </button>

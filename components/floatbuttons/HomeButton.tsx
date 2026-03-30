@@ -1,5 +1,6 @@
-import { Home } from "lucide-react";
-import { FloatingButton } from "./FloatingButton";
+import { Home } from 'lucide-react';
+import { FloatingButton } from './FloatingButton';
+import React from 'react';
 
 interface HomeButtonProps {
   className?: string;

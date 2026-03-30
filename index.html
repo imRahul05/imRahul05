@@ -1,39 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Primary Meta Tags -->
     <title>Rahul Kumar - Software Engineer</title>
     <meta name="title" content="Rahul Kumar - Software Engineer" />
-    <meta name="description" content="Software Engineer at Nuvi Technology and SIH 2023 Winner. Specialized in AI development tools and full-stack architectures." />
-    <meta name="keywords" content="Rahul Kumar, Software Engineer, Full Stack Developer, AI, React, TypeScript, Bangalore, Portfolio" />
+    <meta
+      name="description"
+      content="Software Engineer at Nuvi Technology and SIH 2023 Winner. Specialized in AI development tools and full-stack architectures."
+    />
+    <meta
+      name="keywords"
+      content="Rahul Kumar, Software Engineer, Full Stack Developer, AI, React, TypeScript, Bangalore, Portfolio"
+    />
     <meta name="author" content="Rahul Kumar" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rahul.dev/" />
     <meta property="og:title" content="Rahul Kumar - Software Engineer" />
-    <meta property="og:description" content="Software Engineer at Nuvi Technology and SIH 2023 Winner. Specialized in AI development tools and full-stack architectures." />
+    <meta
+      property="og:description"
+      content="Software Engineer at Nuvi Technology and SIH 2023 Winner. Specialized in AI development tools and full-stack architectures."
+    />
     <meta property="og:image" content="https://rahul.dev/prev.webp" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://x.com/imrahul165" />
     <meta property="twitter:title" content="Rahul Kumar - Software Engineer" />
-    <meta property="twitter:description" content="Software Engineer at Nuvi Technology and SIH 2023 Winner. Specialized in AI development tools and full-stack architectures." />
+    <meta
+      property="twitter:description"
+      content="Software Engineer at Nuvi Technology and SIH 2023 Winner. Specialized in AI development tools and full-stack architectures."
+    />
     <meta property="twitter:image" content="https://rahul.dev/prev.webp" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="https://i.ibb.co/NdrStmqP/rahul-profile.png" />
 
     <script>
-      (function() {
+      (function () {
         try {
           const theme = localStorage.getItem('theme') || 'lilac';
           document.documentElement.setAttribute('data-theme', theme);
-          
+
           const isDark = theme !== 'lilac' && theme !== 'ocean';
           if (isDark) {
             document.documentElement.classList.add('dark');
@@ -42,20 +54,19 @@
       })();
 
       // Single Page Apps for GitHub Pages redirect handler
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-          );
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
         }
-      }(window.location));
+      })(window.location);
     </script>
-
-
-
   </head>
   <body>
     <div id="root"></div>

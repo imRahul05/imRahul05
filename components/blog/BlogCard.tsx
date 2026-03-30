@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Calendar, Clock, ArrowRight } from "lucide-react";
-import { Blog } from "../../data/blogs";
+import React, { useState } from 'react';
+import { Calendar, Clock, ArrowRight } from 'lucide-react';
+import { type Blog } from '../../data/blogs';
 
 interface BlogCardProps {
   blog: Blog;
@@ -9,10 +9,10 @@ interface BlogCardProps {
 
 const formatDate = (dateString: string): string => {
   const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
+  return date.toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
   });
 };
 
@@ -24,7 +24,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ blog, onReadMore }) => {
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLElement>) => {
-    if (e.key === "Enter" || e.key === " ") {
+    if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       onReadMore(blog.slug);
     }
@@ -52,7 +52,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ blog, onReadMore }) => {
             alt={blog.title}
             className="blog-card-image"
             onLoad={() => setIsImageLoaded(true)}
-            style={!isImageLoaded ? { display: "none" } : {}}
+            style={!isImageLoaded ? { display: 'none' } : {}}
           />
         </div>
       )}

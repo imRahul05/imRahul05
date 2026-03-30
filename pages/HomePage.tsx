@@ -26,9 +26,7 @@ export const HomePage: React.FC = () => {
   useEffect(() => {
     const getThresholds = () => {
       const isMobile = window.matchMedia('(max-width: 639px)').matches;
-      return isMobile
-        ? { shrinkAt: 80, expandAt: 10 }
-        : { shrinkAt: 120, expandAt: 60 };
+      return isMobile ? { shrinkAt: 80, expandAt: 10 } : { shrinkAt: 120, expandAt: 60 };
     };
 
     const computeAndSet = () => {
@@ -52,7 +50,7 @@ export const HomePage: React.FC = () => {
     };
 
     const handleScroll = () => {
-      if (rafRef.current != null) return;
+      if (rafRef.current !== null) return;
       rafRef.current = window.requestAnimationFrame(computeAndSet);
     };
 
@@ -62,11 +60,11 @@ export const HomePage: React.FC = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
       if (unlockTimerRef.current) window.clearTimeout(unlockTimerRef.current);
-      if (rafRef.current != null) window.cancelAnimationFrame(rafRef.current);
+      if (rafRef.current !== null) window.cancelAnimationFrame(rafRef.current);
     };
   }, []);
 
-  const featuredProjects = DATA.projects.filter(p => p.image).slice(0, 2);
+  const featuredProjects = DATA.projects.filter((p) => p.image).slice(0, 2);
 
   const handleViewAllProjects = () => {
     navigate('/projects');
@@ -84,16 +82,15 @@ export const HomePage: React.FC = () => {
       <header className={`header sticky-header ${isScrolled ? 'is-scrolled' : ''}`}>
         <div className="header-content">
           <h1>{DATA.personal.name}</h1>
-          <p className="text-sm text-secondary mb-4">
-            {DATA.personal.title}
-          </p>
+          <p className="text-sm text-secondary mb-4">{DATA.personal.title}</p>
           <div className="header-meta text-xs text-muted">
             <MapPin size={14} style={{ color: '#3b82f6' }} />
             {DATA.personal.location}
           </div>
           <div className="building-status text-xs">
             <span className="building-dot" />
-            <span>Building{' '}
+            <span>
+              Building{' '}
               <span className="arthion-wrapper">
                 <a
                   href={DATA.personal.currentlyBuilding.url}
@@ -115,7 +112,9 @@ export const HomePage: React.FC = () => {
         </div>
 
         <div className="header-image">
-          <div className={`profile-flip-container ${isImageLoaded && isVideoReady ? 'flip-animation' : ''}`}>
+          <div
+            className={`profile-flip-container ${isImageLoaded && isVideoReady ? 'flip-animation' : ''}`}
+          >
             {/* Front Side - Profile Image */}
             <div className="profile-flip-face profile-flip-front">
               {!isImageLoaded && <div className="skeleton profile-img"></div>}
@@ -173,24 +172,15 @@ export const HomePage: React.FC = () => {
         <SectionTitle>Featured Projects</SectionTitle>
         <div className="featured-projects-grid">
           {featuredProjects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              {...project}
-            />
+            <ProjectCard key={index} {...project} />
           ))}
         </div>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <button
-            className="view-all-projects-btn"
-            onClick={handleViewAllProjects}
-          >
+          <button className="view-all-projects-btn" onClick={handleViewAllProjects}>
             View All Projects
             <ArrowRight size={16} />
           </button>
-          <button
-            className="view-all-projects-btn"
-            onClick={handleViewBlogs}
-          >
+          <button className="view-all-projects-btn" onClick={handleViewBlogs}>
             <BookOpen size={16} />
             Read Blog
           </button>
@@ -207,7 +197,8 @@ export const HomePage: React.FC = () => {
           <DigitalClock />
         </div>
         <p className="text-xs text-muted mt-8">
-          © {new Date().getFullYear()} {DATA.personal.name}. Built with React, TypeScript, and Plain CSS.
+          © {new Date().getFullYear()} {DATA.personal.name}. Built with React, TypeScript, and Plain
+          CSS.
         </p>
       </footer>
 

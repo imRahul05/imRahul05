@@ -2,9 +2,19 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: read
+  actions: read
+  security-events: write
 
 jobs:
   build_and_check:
@@ -12,22 +22,28 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [22.x]
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
-    - name: Install dependencies
-      run: npm ci || npm install
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Type check
-      run: npx tsc --noEmit
+      - name: Lint
+        run: npm run lint
 
-    - name: Build project
-      run: npm run build
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Check formatting
+        run: npx prettier --check .
+
+      - name: Build project
+        run: npm run build

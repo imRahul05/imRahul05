@@ -1,5 +1,5 @@
-import React, { ComponentType } from 'react';
-import { LucideIcon } from 'lucide-react';
+import React, { type ComponentType } from 'react';
+import { type LucideIcon } from 'lucide-react';
 
 interface IconWrapperProps {
   icon: LucideIcon | ComponentType<{ className?: string }>;

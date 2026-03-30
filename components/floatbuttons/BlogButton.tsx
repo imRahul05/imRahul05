@@ -1,5 +1,6 @@
-import { BookOpen } from "lucide-react";
-import { FloatingButton } from "./FloatingButton";
+import { BookOpen } from 'lucide-react';
+import { FloatingButton } from './FloatingButton';
+import React from 'react';
 
 interface BlogButtonProps {
   className?: string;

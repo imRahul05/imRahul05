@@ -1,5 +1,3 @@
-
-
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=2800&pause=900&color=00D4FF&center=true&vCenter=true&width=620&lines=Namask%C4%81ra+%F0%9F%99%8F+Welcome+to+my+profile;%F0%9F%8F%86+Smart+India+Hackathon+2023+Winner;%E2%9A%A1+React+%7C+Next.js+%7C+Node.js+%7C+AI;%F0%9F%94%A5+Building+at+the+edge+of+frontend+%26+AGents;%F0%9F%9A%80+Always+learning%2C+always+shipping" alt="Typing SVG" />
 </div>
@@ -26,9 +24,9 @@
 
 A software engineer who sits at the crossroads of **frontend craft**, **product intuition**, and **AI curiosity**.
 
-I care deeply about the details — the kind of polish that makes an interface feel *alive*. Whether it's a snappy transition, a well-composed layout, or a thoughtful API — I want every layer to feel intentional.
+I care deeply about the details — the kind of polish that makes an interface feel _alive_. Whether it's a snappy transition, a well-composed layout, or a thoughtful API — I want every layer to feel intentional.
 
-> *"Great software isn't just functional — it's felt."*
+> _"Great software isn't just functional — it's felt."_
 
 </td>
 <td width="45%" valign="top">
@@ -39,15 +37,15 @@ I care deeply about the details — the kind of polish that makes an interface f
 🌐 &nbsp;**Full-stack leaning Frontend**  
 🤖 &nbsp;**AI-integrated app builder**  
 📍 &nbsp;**India**  
-🎯 &nbsp;**Open to exciting opportunities**  
+🎯 &nbsp;**Open to exciting opportunities**
 
 </td>
 </tr>
 </table>
 
 ---
-<p align="center"><sub>Technologies I reach for every day</sub></p> <h4 align="center">Languages</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=ts,js,java,python&theme=dark&perline=7" /> </p> <h4 align="center">Frontend</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,redux&theme=dark&perline=7" /> </p> <h4 align="center">Backend & Data</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,mongodb,mysql,firebase&theme=dark&perline=6" /> </p> <h4 align="center">Tooling & Platforms</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,nginx,docker,netlify,flutter,postman&theme=dark&perline=9" /> </p>
----
+
+## <p align="center"><sub>Technologies I reach for every day</sub></p> <h4 align="center">Languages</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=ts,js,java,python&theme=dark&perline=7" /> </p> <h4 align="center">Frontend</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,redux&theme=dark&perline=7" /> </p> <h4 align="center">Backend & Data</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,mongodb,mysql,firebase&theme=dark&perline=6" /> </p> <h4 align="center">Tooling & Platforms</h4> <p align="center"> <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,nginx,docker,netlify,flutter,postman&theme=dark&perline=9" /> </p>
 
 <h2 align="center">— Where My Head Is At —</h2>
 
@@ -114,16 +112,16 @@ I care deeply about the details — the kind of polish that makes an interface f
 
 <div align="center">
 
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/imrahul05)
-  [![Twitter](https://img.shields.io/badge/Twitter-Follow-%231DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/imrahul165)
-  [![Instagram](https://img.shields.io/badge/Instagram-Follow-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/imrahul2516)
-  [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-%23FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/c/mangaamaze%20-%20joyboy)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/imrahul05)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-%231DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/imrahul165)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/imrahul2516)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-%23FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/c/mangaamaze%20-%20joyboy)
 
   <br/>
 
-  [![LeetCode](https://img.shields.io/badge/LeetCode-Solve-%23FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://www.leetcode.com/imrahul05)
-  [![HackerRank](https://img.shields.io/badge/HackerRank-Code-%232EC866?style=for-the-badge&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/imrahul05)
-  [![Discord](https://img.shields.io/badge/Discord-Chat-%235865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/redhaired4387)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Solve-%23FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://www.leetcode.com/imrahul05)
+[![HackerRank](https://img.shields.io/badge/HackerRank-Code-%232EC866?style=for-the-badge&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/imrahul05)
+[![Discord](https://img.shields.io/badge/Discord-Chat-%235865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/redhaired4387)
 
 </div>
 
@@ -134,8 +132,6 @@ I care deeply about the details — the kind of polish that makes an interface f
 </div>
 
 <br/>
-
-
 
 <br/>
 

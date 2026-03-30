@@ -32,13 +32,16 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
   z-index: 1000;
 }
 
 /* Tooltip arrow */
 .floating-btn-tooltip::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 50%;
@@ -57,7 +60,7 @@
 
 /* The ripple (hover preview) */
 .theme-toggle-btn::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -123,4 +126,3 @@
   z-index: 9999;
   will-change: clip-path;
 }
-

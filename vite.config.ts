@@ -1,27 +1,29 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default defineConfig({
   server: {
     port: 3000,
-    host: "0.0.0.0",
+    host: '0.0.0.0',
   },
 
-  plugins: [
-    react(),
-
-  ],
+  plugins: [react()],
 
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "."),
+      '@': path.resolve(__dirname, '.'),
     },
   },
 
   build: {
     sourcemap: false,
-    minify: "terser",
+    minify: 'terser',
     terserOptions: {
       compress: {
         drop_console: true,
@@ -41,26 +43,30 @@ export default defineConfig({
         propertyReadSideEffects: false,
       },
       input: {
-        main: "./index.html",
+        main: './index.html',
       },
       output: {
         manualChunks(id) {
           // Split React ecosystem into vendor chunk
-          if (id.includes("node_modules/react") || id.includes("node_modules/react-dom") || id.includes("node_modules/react-router")) {
-            return "react-vendor";
+          if (
+            id.includes('node_modules/react') ||
+            id.includes('node_modules/react-dom') ||
+            id.includes('node_modules/react-router')
+          ) {
+            return 'react-vendor';
           }
           // PostHog is large - load it separately
-          if (id.includes("node_modules/posthog")) {
-            return "posthog";
+          if (id.includes('node_modules/posthog')) {
+            return 'posthog';
           }
           // Lucide icons
-          if (id.includes("node_modules/lucide-react")) {
-            return "icons";
+          if (id.includes('node_modules/lucide-react')) {
+            return 'icons';
           }
         },
       },
     },
     chunkSizeWarningLimit: 500,
-    target: "esnext",
+    target: 'esnext',
   },
 });

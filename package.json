@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "pre-deploy": "npm run build",
+    "lint": "eslint . --ext ts,tsx",
+    "lint:fix": "eslint . --ext ts,tsx --fix",
+    "format": "prettier --write .",
+    "pre-deploy": "npm run lint && npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -21,14 +24,23 @@
     "twilio": "^5.12.2"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.4",
     "@types/node": "^22.14.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.57.2",
+    "@typescript-eslint/parser": "^8.57.2",
     "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "prettier": "^3.8.1",
     "sass": "^1.96.0",
     "shadcn": "^3.6.3",
     "sharp": "^0.34.5",
     "typescript": "~5.8.2",
+    "typescript-eslint": "^8.57.2",
     "vite": "^6.2.0"
   }
 }

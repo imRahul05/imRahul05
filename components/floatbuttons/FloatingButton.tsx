@@ -1,7 +1,7 @@
-import React from "react";
-import { LucideIcon } from "lucide-react";
+import React from 'react';
+import { type LucideIcon } from 'lucide-react';
 
-import "../styles/AnimatedThemeToggler.css";
+import '../styles/AnimatedThemeToggler.css';
 
 interface FloatingButtonProps {
   icon: LucideIcon;
@@ -22,7 +22,7 @@ export const FloatingButton: React.FC<FloatingButtonProps> = ({
     <button
       onClick={onClick}
       aria-label={ariaLabel || label}
-      className={`theme-toggle-btn floating-btn-with-tooltip ${className || ""}`}
+      className={`theme-toggle-btn floating-btn-with-tooltip ${className || ''}`}
       type="button"
     >
       <span className="floating-btn-tooltip">{label}</span>

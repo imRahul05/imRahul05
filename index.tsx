@@ -5,8 +5,15 @@ import App from './App';
 import './styles.scss';
 
 // Dynamically import PostHog to reduce initial bundle size
+
+type PostHogProviderType = React.ComponentType<{
+  children: React.ReactNode;
+  apiKey: string;
+  options?: Record<string, unknown>;
+}>;
+
 const PostHogWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [PostHogProvider, setPostHogProvider] = useState<React.ComponentType<any> | null>(null);
+  const [PostHogProvider, setPostHogProvider] = useState<PostHogProviderType | null>(null);
 
   useEffect(() => {
     // Load PostHog after initial render
@@ -33,7 +40,7 @@ const PostHogWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) =
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
+  throw new Error('Could not find root element to mount to');
 }
 
 const root = ReactDOM.createRoot(rootElement);
@@ -42,5 +49,5 @@ root.render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </PostHogWrapper>
+  </PostHogWrapper>,
 );

@@ -23,11 +23,7 @@ export const BlogsPage: React.FC = () => {
   return (
     <div className="container blogs-page">
       <header className="blogs-page-header">
-        <button
-          className="back-button"
-          onClick={handleBackClick}
-          aria-label="Go back to home"
-        >
+        <button className="back-button" onClick={handleBackClick} aria-label="Go back to home">
           <ArrowLeft size={20} />
           <span>Back</span>
         </button>
@@ -40,11 +36,7 @@ export const BlogsPage: React.FC = () => {
       <section className="section">
         <div className="blogs-grid">
           {BLOGS.map((blog) => (
-            <BlogCard
-              key={blog.slug}
-              blog={blog}
-              onReadMore={handleReadMore}
-            />
+            <BlogCard key={blog.slug} blog={blog} onReadMore={handleReadMore} />
           ))}
         </div>
       </section>

@@ -4,7 +4,7 @@ import { BLOGS, Blog } from '../../data/blogs';
 import { AnimatedThemeToggler } from '../floatbuttons/AnimatedThemeToggler';
 import { HomeButton } from '../floatbuttons/HomeButton';
 import { ResumeButton } from '../floatbuttons/ResumeButton';
-import { MermaidDiagram } from "./MermaidDiagram";
+import { MermaidDiagram } from './MermaidDiagram';
 
 interface BlogDetailPageProps {
   slug: string;
@@ -24,7 +24,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
     return date.toLocaleDateString('en-US', {
       month: 'long',
       day: 'numeric',
-      year: 'numeric'
+      year: 'numeric',
     });
   };
 
@@ -43,7 +43,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
         elements.push(
           <ul key={`ul-${elements.length}`} className="blog-list">
             {unorderedListItems}
-          </ul>
+          </ul>,
         );
         unorderedListItems = [];
       }
@@ -52,7 +52,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
         elements.push(
           <ol key={`ol-${elements.length}`} className="blog-list blog-list-ordered">
             {orderedListItems}
-          </ol>
+          </ol>,
         );
         orderedListItems = [];
       }
@@ -68,17 +68,13 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
         } else {
           const code = codeBlockContent.join('\n');
 
-          if (codeBlockLanguage === "mermaid") {
-            elements.push(
-              <MermaidDiagram key={`mermaid-${index}`} chart={code} />
-            );
+          if (codeBlockLanguage === 'mermaid') {
+            elements.push(<MermaidDiagram key={`mermaid-${index}`} chart={code} />);
           } else {
             elements.push(
               <pre key={`code-${index}`} className="blog-code-block">
-                <code className={`language-${codeBlockLanguage}`}>
-                  {code}
-                </code>
-              </pre>
+                <code className={`language-${codeBlockLanguage}`}>{code}</code>
+              </pre>,
             );
           }
           inCodeBlock = false;
@@ -105,7 +101,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
         elements.push(
           <h1 key={index} className="blog-content-h1">
             {line.slice(2)}
-          </h1>
+          </h1>,
         );
         return;
       }
@@ -116,7 +112,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
         elements.push(
           <h2 key={index} className="blog-content-h2">
             {line.slice(3)}
-          </h2>
+          </h2>,
         );
         return;
       }
@@ -127,7 +123,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
         elements.push(
           <h3 key={index} className="blog-content-h3">
             {line.slice(4)}
-          </h3>
+          </h3>,
         );
         return;
       }
@@ -138,7 +134,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
         unorderedListItems.push(
           <li key={index} className="blog-list-item">
             {renderInlineContent(line.slice(2))}
-          </li>
+          </li>,
         );
         return;
       }
@@ -150,7 +146,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
         orderedListItems.push(
           <li key={index} className="blog-list-item">
             {renderInlineContent(orderedMatch[1])}
-          </li>
+          </li>,
         );
         return;
       }
@@ -160,7 +156,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
       elements.push(
         <p key={index} className="blog-content-p">
           {renderInlineContent(line)}
-        </p>
+        </p>,
       );
     });
 
@@ -185,7 +181,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
         nodes.push(
           <code key={`${match.index}-code`} className="blog-inline-code">
             {token.slice(1, -1)}
-          </code>
+          </code>,
         );
       } else if (token.startsWith('[')) {
         const linkMatch = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
@@ -200,17 +196,13 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
               className="blog-inline-link"
             >
               {label}
-            </a>
+            </a>,
           );
         } else {
           nodes.push(token);
         }
       } else if (token.startsWith('**') && token.endsWith('**')) {
-        nodes.push(
-          <strong key={`${match.index}-bold`}>
-            {token.slice(2, -2)}
-          </strong>
-        );
+        nodes.push(<strong key={`${match.index}-bold`}>{token.slice(2, -2)}</strong>);
       } else {
         nodes.push(token);
       }
@@ -294,9 +286,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug, onBack, on
           </div>
         </div>
 
-        <div className="blog-article-content">
-          {renderContent(blog.content)}
-        </div>
+        <div className="blog-article-content">{renderContent(blog.content)}</div>
       </article>
 
       <div className="floating-dock">
