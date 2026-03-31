@@ -99,67 +99,67 @@ export const HomePage: React.FC = () => {
       <div className="container homepage-container">
         {/* HEADER */}
         <header className={`header sticky-header ${isScrolled ? 'is-scrolled' : ''}`}>
-        <div className="header-content">
-          <h1>{DATA.personal.name}</h1>
-          <p className="text-sm text-secondary mb-4">{DATA.personal.title}</p>
-          <div className="header-meta text-xs text-muted">
-            <MapPin size={14} style={{ color: '#3b82f6' }} />
-            {DATA.personal.location}
-          </div>
-          <div className="building-status text-xs">
-            <span className="building-dot" />
-            <span>
-              Building{' '}
-              <span className="arthion-wrapper">
-                <a
-                  href={DATA.personal.currentlyBuilding.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="arthion-brand"
-                >
-                  {DATA.personal.currentlyBuilding.name}
-                </a>
-                <span className="arthion-preview">
-                  <img
-                    src={DATA.personal.currentlyBuilding.previewImage}
-                    alt={DATA.personal.currentlyBuilding.name}
-                  />
+          <div className="header-content">
+            <h1>{DATA.personal.name}</h1>
+            <p className="text-sm text-secondary mb-4">{DATA.personal.title}</p>
+            <div className="header-meta text-xs text-muted">
+              <MapPin size={14} style={{ color: '#3b82f6' }} />
+              {DATA.personal.location}
+            </div>
+            <div className="building-status text-xs">
+              <span className="building-dot" />
+              <span>
+                Building{' '}
+                <span className="arthion-wrapper">
+                  <a
+                    href={DATA.personal.currentlyBuilding.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="arthion-brand"
+                  >
+                    {DATA.personal.currentlyBuilding.name}
+                  </a>
+                  <span className="arthion-preview">
+                    <img
+                      src={DATA.personal.currentlyBuilding.previewImage}
+                      alt={DATA.personal.currentlyBuilding.name}
+                    />
+                  </span>
                 </span>
               </span>
-            </span>
+            </div>
           </div>
-        </div>
 
-        <div className="header-image">
-          <div
-            className={`profile-flip-container ${isImageLoaded && isVideoReady ? 'flip-animation' : ''}`}
-          >
-            {/* Front Side - Profile Image */}
-            <div className="profile-flip-face profile-flip-front">
-              {!isImageLoaded && <div className="skeleton profile-img"></div>}
-              <img
-                src={DATA.personal.image}
-                alt={DATA.personal.name}
-                className={`profile-img ${!isImageLoaded ? 'hidden' : ''}`}
-                onLoad={() => setIsImageLoaded(true)}
-                style={!isImageLoaded ? { display: 'none' } : {}}
-              />
-            </div>
-            {/* Back Side - Video */}
-            <div className="profile-flip-face profile-flip-back">
-              <video
-                className="profile-video"
-                src={DATA.personal.profileVideo}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="auto"
-                onCanPlayThrough={() => setIsVideoReady(true)}
-              />
+          <div className="header-image">
+            <div
+              className={`profile-flip-container ${isImageLoaded && isVideoReady ? 'flip-animation' : ''}`}
+            >
+              {/* Front Side - Profile Image */}
+              <div className="profile-flip-face profile-flip-front">
+                {!isImageLoaded && <div className="skeleton profile-img"></div>}
+                <img
+                  src={DATA.personal.image}
+                  alt={DATA.personal.name}
+                  className={`profile-img ${!isImageLoaded ? 'hidden' : ''}`}
+                  onLoad={() => setIsImageLoaded(true)}
+                  style={!isImageLoaded ? { display: 'none' } : {}}
+                />
+              </div>
+              {/* Back Side - Video */}
+              <div className="profile-flip-face profile-flip-back">
+                <video
+                  className="profile-video"
+                  src={DATA.personal.profileVideo}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
+                  onCanPlayThrough={() => setIsVideoReady(true)}
+                />
+              </div>
             </div>
           </div>
-        </div>
         </header>
 
         {/* BIO */}

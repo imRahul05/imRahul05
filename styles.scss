@@ -51,10 +51,7 @@ body {
     background-color: rgba(16, 3, 12, 0.74);
     border: 1px solid rgba(255, 140, 92, 0.24);
     border-radius: 1.25rem;
-    padding:
-      calc(1rem + 1px)
-      calc(1rem + 1px)
-      calc(1rem + 1px);
+    padding: calc(1rem + 1px) calc(1rem + 1px) calc(1rem + 1px);
     box-shadow:
       0 24px 80px rgba(0, 0, 0, 0.34),
       inset 0 1px 0 rgba(255, 214, 179, 0.18);
@@ -88,10 +85,7 @@ body {
   }
 
   .footer {
-    padding:
-      2rem
-      1.1rem
-      0;
+    padding: 2rem 1.1rem 0;
   }
 
   .header-content {

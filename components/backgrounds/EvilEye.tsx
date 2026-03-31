@@ -42,9 +42,21 @@ function generateNoiseTexture(size = 256): Uint8Array {
     const tx = fx - ix;
     const ty = fy - iy;
     const wrapped = freq | 0;
-    const v00 = hash(((ix % wrapped) + wrapped) % wrapped, ((iy % wrapped) + wrapped) % wrapped, seed);
-    const v10 = hash((((ix + 1) % wrapped) + wrapped) % wrapped, ((iy % wrapped) + wrapped) % wrapped, seed);
-    const v01 = hash(((ix % wrapped) + wrapped) % wrapped, (((iy + 1) % wrapped) + wrapped) % wrapped, seed);
+    const v00 = hash(
+      ((ix % wrapped) + wrapped) % wrapped,
+      ((iy % wrapped) + wrapped) % wrapped,
+      seed,
+    );
+    const v10 = hash(
+      (((ix + 1) % wrapped) + wrapped) % wrapped,
+      ((iy % wrapped) + wrapped) % wrapped,
+      seed,
+    );
+    const v01 = hash(
+      ((ix % wrapped) + wrapped) % wrapped,
+      (((iy + 1) % wrapped) + wrapped) % wrapped,
+      seed,
+    );
     const v11 = hash(
       (((ix + 1) % wrapped) + wrapped) % wrapped,
       (((iy + 1) % wrapped) + wrapped) % wrapped,
