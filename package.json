@@ -17,7 +17,7 @@
     "lucide-react": "^0.555.0",
     "mermaid": "^11.13.0",
     "ogl": "^1.0.11",
-    "posthog-js": "^1.313.0",
+    "posthog-js": "^1.364.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.12.0",
