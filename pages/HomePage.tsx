@@ -11,13 +11,16 @@ import { DigitalClock } from '../components/DigitalClock';
 import { AnimatedThemeToggler } from '../components/floatbuttons/AnimatedThemeToggler';
 import { ResumeButton } from '../components/floatbuttons/ResumeButton';
 import { BlogButton } from '../components/floatbuttons/BlogButton';
+import { SauronButton } from '../components/floatbuttons/SauronButton';
 import { XIcon } from '../components/XIcon';
+import EvilEye from '../components/backgrounds/EvilEye';
 
 export const HomePage: React.FC = () => {
   const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [isVideoReady, setIsVideoReady] = useState(false);
+  const [isSauronEnabled, setIsSauronEnabled] = useState(false);
 
   const scrollLockRef = useRef(false);
   const unlockTimerRef = useRef<number | null>(null);
@@ -77,9 +80,25 @@ export const HomePage: React.FC = () => {
   };
 
   return (
-    <div className="container">
-      {/* HEADER */}
-      <header className={`header sticky-header ${isScrolled ? 'is-scrolled' : ''}`}>
+    <div className={`homepage-shell ${isSauronEnabled ? 'sauron-active' : ''}`}>
+      {isSauronEnabled && (
+        <EvilEye
+          eyeColor="#FF6F37"
+          intensity={1.5}
+          pupilSize={0.6}
+          irisWidth={0.25}
+          glowIntensity={0.35}
+          scale={0.8}
+          noiseScale={1}
+          pupilFollow={1}
+          flameSpeed={1}
+          backgroundColor="#060010"
+        />
+      )}
+
+      <div className="container homepage-container">
+        {/* HEADER */}
+        <header className={`header sticky-header ${isScrolled ? 'is-scrolled' : ''}`}>
         <div className="header-content">
           <h1>{DATA.personal.name}</h1>
           <p className="text-sm text-secondary mb-4">{DATA.personal.title}</p>
@@ -141,69 +160,78 @@ export const HomePage: React.FC = () => {
             </div>
           </div>
         </div>
-      </header>
+        </header>
 
-      {/* BIO */}
-      <section className="section">
-        <p className="text-sm leading-relaxed text-secondary" style={{ maxWidth: '400px' }}>
-          {DATA.personal.bio}
-        </p>
-      </section>
+        {/* BIO */}
+        <section className="section">
+          <p className="text-sm leading-relaxed text-secondary" style={{ maxWidth: '400px' }}>
+            {DATA.personal.bio}
+          </p>
+        </section>
 
-      {/* SKILLS (Badges Style) */}
-      <section className="section">
-        <div className="skills-list">
-          {DATA.skills.map((skill) => (
-            <span key={skill} className="skill-badge">
-              {skill}
-            </span>
-          ))}
-        </div>
-      </section>
+        {/* SKILLS (Badges Style) */}
+        <section className="section">
+          <div className="skills-list">
+            {DATA.skills.map((skill) => (
+              <span key={skill} className="skill-badge">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </section>
 
-      {/* EXPERIENCE */}
-      <Experience />
+        {/* EXPERIENCE */}
+        <Experience />
 
-      {/* EDUCATION */}
-      <Education />
+        {/* EDUCATION */}
+        <Education />
 
-      {/* FEATURED PROJECTS */}
-      <section className="section">
-        <SectionTitle>Featured Projects</SectionTitle>
-        <div className="featured-projects-grid">
-          {featuredProjects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
-          ))}
-        </div>
-        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-          <button className="view-all-projects-btn" onClick={handleViewAllProjects}>
-            View All Projects
-            <ArrowRight size={16} />
-          </button>
-          <button className="view-all-projects-btn" onClick={handleViewBlogs}>
-            <BookOpen size={16} />
-            Read Blog
-          </button>
-        </div>
-      </section>
+        {/* FEATURED PROJECTS */}
+        <section className="section">
+          <SectionTitle>Featured Projects</SectionTitle>
+          <div className="featured-projects-grid">
+            {featuredProjects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            <button className="view-all-projects-btn" onClick={handleViewAllProjects}>
+              View All Projects
+              <ArrowRight size={16} />
+            </button>
+            <button className="view-all-projects-btn" onClick={handleViewBlogs}>
+              <BookOpen size={16} />
+              Read Blog
+            </button>
+          </div>
+        </section>
 
-      {/* FOOTER */}
-      <footer className="footer">
-        <div className="footer-links">
-          <SocialLink href={`mailto:${DATA.personal.email}`} icon={Mail} label="Email" />
-          <SocialLink href={`https://${DATA.personal.github}`} icon={Github} label="GitHub" />
-          <SocialLink href={`https://${DATA.personal.linkedin}`} icon={Linkedin} label="LinkedIn" />
-          <SocialLink href={`https://${DATA.personal.X}`} icon={XIcon} label="X" />
-          <DigitalClock />
-        </div>
-        <p className="text-xs text-muted mt-8">
-          © {new Date().getFullYear()} {DATA.personal.name}. Built with React, TypeScript, and Plain
-          CSS.
-        </p>
-      </footer>
+        {/* FOOTER */}
+        <footer className="footer">
+          <div className="footer-links">
+            <SocialLink href={`mailto:${DATA.personal.email}`} icon={Mail} label="Email" />
+            <SocialLink href={`https://${DATA.personal.github}`} icon={Github} label="GitHub" />
+            <SocialLink
+              href={`https://${DATA.personal.linkedin}`}
+              icon={Linkedin}
+              label="LinkedIn"
+            />
+            <SocialLink href={`https://${DATA.personal.X}`} icon={XIcon} label="X" />
+            <DigitalClock />
+          </div>
+          <p className="text-xs text-muted mt-8">
+            © {new Date().getFullYear()} {DATA.personal.name}. Built with React, TypeScript, and
+            Plain CSS.
+          </p>
+        </footer>
+      </div>
 
       <div className="floating-dock">
         <AnimatedThemeToggler />
+        <SauronButton
+          enabled={isSauronEnabled}
+          onClick={() => setIsSauronEnabled((current) => !current)}
+        />
         <BlogButton onClick={handleViewBlogs} />
         <ResumeButton />
       </div>
