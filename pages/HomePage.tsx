@@ -16,6 +16,9 @@ import { XIcon } from '../components/XIcon';
 import EvilEye from '../components/backgrounds/EvilEye';
 
 export const HomePage: React.FC = () => {
+  const SAURON_AUDIO_URL =
+    'https://res.cloudinary.com/dw8r5ivmx/video/upload/v1775033836/mixkit-fire-explosion-1343_zl5ctw.wav';
+
   const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -25,6 +28,90 @@ export const HomePage: React.FC = () => {
   const scrollLockRef = useRef(false);
   const unlockTimerRef = useRef<number | null>(null);
   const rafRef = useRef<number | null>(null);
+  const sauronAudioRef = useRef<{
+    audio: HTMLAudioElement;
+    fadeFrame: number | null;
+  } | null>(null);
+
+  const fadeAudio = (
+    audio: HTMLAudioElement,
+    from: number,
+    to: number,
+    durationMs: number,
+    onComplete?: () => void,
+  ) => {
+    const start = performance.now();
+    let frameId = 0;
+
+    const step = (timestamp: number) => {
+      const progress = Math.min((timestamp - start) / durationMs, 1);
+      audio.volume = from + (to - from) * progress;
+
+      if (progress < 1) {
+        frameId = window.requestAnimationFrame(step);
+        const activeAudio = sauronAudioRef.current;
+        if (activeAudio?.audio === audio) {
+          activeAudio.fadeFrame = frameId;
+        }
+        return;
+      }
+
+      onComplete?.();
+    };
+
+    frameId = window.requestAnimationFrame(step);
+    return frameId;
+  };
+
+  const stopSauronAudio = (fadeDuration = 300) => {
+    const activeAudio = sauronAudioRef.current;
+    if (!activeAudio) return;
+
+    const { audio, fadeFrame } = activeAudio;
+    if (fadeFrame !== null) {
+      window.cancelAnimationFrame(fadeFrame);
+    }
+
+    activeAudio.fadeFrame = fadeAudio(audio, audio.volume, 0, fadeDuration, () => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+
+    sauronAudioRef.current = null;
+  };
+
+  const startSauronAudio = () => {
+    const existing = sauronAudioRef.current;
+    if (existing) {
+      if (existing.fadeFrame !== null) {
+        window.cancelAnimationFrame(existing.fadeFrame);
+      }
+      existing.audio.currentTime = 0;
+      existing.audio
+        .play()
+        .then(() => {
+          existing.fadeFrame = fadeAudio(existing.audio, existing.audio.volume, 0.3, 450);
+        })
+        .catch(() => undefined);
+      return;
+    }
+
+    const audio = new Audio(SAURON_AUDIO_URL);
+    audio.loop = true;
+    audio.preload = 'auto';
+    audio.volume = 0;
+    audio.crossOrigin = 'anonymous';
+
+    const fadeFrame = fadeAudio(audio, 0, 0.3, 450);
+    sauronAudioRef.current = { audio, fadeFrame };
+
+    audio.play().catch(() => {
+      if (sauronAudioRef.current?.audio === audio && fadeFrame !== null) {
+        window.cancelAnimationFrame(fadeFrame);
+      }
+      sauronAudioRef.current = null;
+    });
+  };
 
   useEffect(() => {
     const getThresholds = () => {
@@ -67,6 +154,12 @@ export const HomePage: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    return () => {
+      stopSauronAudio(180);
+    };
+  }, []);
+
   const featuredProjects = DATA.projects.filter((p) => p.image).slice(0, 2);
 
   const handleViewAllProjects = () => {
@@ -77,6 +170,18 @@ export const HomePage: React.FC = () => {
   const handleViewBlogs = () => {
     navigate('/blogs');
     window.scrollTo(0, 0);
+  };
+
+  const handleToggleSauron = () => {
+    setIsSauronEnabled((current) => {
+      const next = !current;
+      if (next) {
+        startSauronAudio();
+      } else {
+        stopSauronAudio();
+      }
+      return next;
+    });
   };
 
   return (
@@ -228,10 +333,7 @@ export const HomePage: React.FC = () => {
 
       <div className="floating-dock">
         <AnimatedThemeToggler />
-        <SauronButton
-          enabled={isSauronEnabled}
-          onClick={() => setIsSauronEnabled((current) => !current)}
-        />
+        <SauronButton enabled={isSauronEnabled} onClick={handleToggleSauron} />
         <BlogButton onClick={handleViewBlogs} />
         <ResumeButton />
       </div>

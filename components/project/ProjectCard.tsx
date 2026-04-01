@@ -24,7 +24,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   video,
   tag,
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -68,11 +67,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <>
-      <div
-        className="project-card"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
+      <div className="project-card">
         {/* Image Section */}
         <div className="project-card-image-wrapper">
           {!isImageLoaded && image && <div className="skeleton project-card-skeleton" />}
@@ -89,11 +84,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           )}
           {video && (
             <button
-              className={`project-card-play-btn ${isHovered ? 'visible' : ''}`}
+              type="button"
+              className="project-card-play-btn"
               onClick={handlePlayClick}
               aria-label={`Play ${name} video`}
             >
               <Play size={28} fill="currentColor" />
+              <span className="project-card-play-label">Video demo</span>
             </button>
           )}
         </div>
