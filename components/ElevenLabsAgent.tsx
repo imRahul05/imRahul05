@@ -5,6 +5,15 @@ export function ElevenLabsAgent() {
   const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (isMobile) {
+      setDismissed(true);
+    }
+  }, []);
+
+  useEffect(() => {
     if (dismissed) return;
 
     const script = document.createElement('script');
