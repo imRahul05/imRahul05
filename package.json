@@ -14,7 +14,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "lucide-react": "^0.555.0",
+    "lucide-react": "^1.8.0",
     "mermaid": "^11.14.0",
     "ogl": "^1.0.11",
     "posthog-js": "^1.364.7",
