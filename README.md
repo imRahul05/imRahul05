@@ -12,7 +12,6 @@
   <img src="https://img.shields.io/badge/Based%20in-India%20%F0%9F%87%AE%F0%9F%87%B3-0e75b6?style=flat-square"/>
 </div>
 
----
 
 <!-- <h2 align="center">— Who Am I —</h2>
 
@@ -96,7 +95,7 @@ I care deeply about the details — the kind of polish that makes an interface f
 
 ---
 
-<h2 align="center">— Now Playing —</h2>
+<!-- <h2 align="center">— Now Playing —</h2>
 
 <div align="center">
   <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31boxxh5vf6xukmykb56zdes6utm&redirect=true">
@@ -104,7 +103,7 @@ I care deeply about the details — the kind of polish that makes an interface f
   </a>
 </div>
 
----
+--- -->
 
 <h2 align="center">— Let's Connect —</h2>
 
