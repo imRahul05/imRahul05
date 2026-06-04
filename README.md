@@ -69,7 +69,6 @@ I care deeply about the details — the kind of polish that makes an interface f
 
 ---
 
-<h2 align="center">— Stats & Streaks —</h2>
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=imrahul05&theme=tokyonight&hide_border=true&background=0D1117&ring=00d4ff&fire=ff6e96&currStreakLabel=00d4ff&sideLabels=aaaaaa&currStreakNum=ffffff&dates=666666&sideNums=ffffff&stroke=0D1117" alt="GitHub Streak" width="65%" />
@@ -77,7 +76,7 @@ I care deeply about the details — the kind of polish that makes an interface f
 
 <br/>
 
-<div align="center">
+<!-- <div align="center">
   <img src="https://leetcard.jacoblin.cool/imRahul05?theme=dark&font=Anybody&ext=activity&border=0&radius=10" alt="LeetCode Stats" width="48%"/>
   &nbsp;
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=imrahul05&theme=github_dark&utcOffset=5.5" alt="Productive Time" width="47%"/>
@@ -91,7 +90,7 @@ I care deeply about the details — the kind of polish that makes an interface f
     <br/>
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=imrahul05&theme=github_dark" width="88%" />
   </details>
-</div>
+</div> -->
 
 ---
 
