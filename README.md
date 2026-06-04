@@ -127,9 +127,9 @@ I care deeply about the details — the kind of polish that makes an interface f
 
 ---
 
-<div align="center">
+<!-- <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" width="70%" alt="Dev Quote"/>
-</div>
+</div> -->
 
 <br/>
 
