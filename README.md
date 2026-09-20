@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/badge/Open%20to%20Work-yes-00d4ff?style=flat-square&logo=checkmarx&logoColor=white"/>
   &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Based%20in-India%20%F0%9F%87%AE%F0%9F%87%B3-0e75b6?style=flat-square"/>
+  
 </div>
 
 
